@@ -56,12 +56,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Heorgii/brand-maze.git"
+    "url": "git+https://github.com/StudentVlad5/legal-services.git"
   },
   "author": "Heorhii",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/Heorgii/brand-maze/issues"
+    "url": "https://github.com/StudentVlad5/legal-services/issues"
   },
   "keywords": [
     "legal-services"
