@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/legal-services/static/css/main.095281ad.css",
-    "main.js": "/legal-services/static/js/main.75a0f19c.js",
+    "main.js": "/legal-services/static/js/main.5613bb9f.js",
     "static/media/IMG_4810.MOV": "/legal-services/static/media/IMG_4810.f108a44414e87d0c43c1.MOV",
     "static/media/heorhii_blackAndWhite.webp": "/legal-services/static/media/heorhii_blackAndWhite.00fd070ca62edfc84da0.webp",
     "static/media/filmoteka_project.webp": "/legal-services/static/media/filmoteka_project.2bec8113289975675b3b.webp",
@@ -22,10 +22,10 @@
     "static/media/mdi_light_chart-pie.svg": "/legal-services/static/media/mdi_light_chart-pie.8ab8da0cea2054c17744fd4120678ed3.svg",
     "static/media/mdi_light_chart-bar.svg": "/legal-services/static/media/mdi_light_chart-bar.4b99fcbf4f0881024811e2bd5961c271.svg",
     "main.095281ad.css.map": "/legal-services/static/css/main.095281ad.css.map",
-    "main.75a0f19c.js.map": "/legal-services/static/js/main.75a0f19c.js.map"
+    "main.5613bb9f.js.map": "/legal-services/static/js/main.5613bb9f.js.map"
   },
   "entrypoints": [
     "static/css/main.095281ad.css",
-    "static/js/main.75a0f19c.js"
+    "static/js/main.5613bb9f.js"
   ]
 }
