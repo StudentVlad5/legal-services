@@ -1,5 +1,6 @@
 import "modern-normalize";
 import { createGlobalStyle } from "styled-components";
+import { theme } from "./Variables.styled";
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -9,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
  
-  background-color: ${(props) => props.theme.white};
+  background-color: ${theme.white};
   }
 
   code {
@@ -52,7 +53,7 @@ img {
   margin: 0 auto;
   display: flex;
   padding: 1rem 0;
-  color: ${(props) => props.theme.white};
+  color: ${theme.white};
 }
 
 .header-wrapper h1 {
@@ -90,8 +91,8 @@ img {
 .image-gallery-slide .image-gallery-description{
   top: 0;
   bottom: auto;
-  color: ${(props) => props.theme.black};
-  background-color: ${(props) => props.theme.white};
+  color: ${theme.black};
+  background-color: ${theme.white};
   font-size: 10px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -142,9 +143,9 @@ img {
 .js .input-file:focus + .input-file-trigger,
 .js .input-file-trigger:hover,
 .js .input-file-trigger:focus {
-  background: ${(props) => props.theme.accentBlue};
-  color: ${(props) => props.theme.white};
-  box-shadow: 1px -1px 10px -2px ${(props) => props.theme.blackOpacity} inset;
+  background: ${theme.accentBlue};
+  color: ${theme.white};
+  box-shadow: 1px -1px 10px -2px ${theme.blackOpacity} inset;
 }
 
 .file-return {
@@ -157,7 +158,7 @@ img {
   font-style: italic;
   font-size: 0.7em;
   font-weight: 400;
-  color: ${(props) => props.theme.black};
+  color: ${theme.black};
 }
 .js .file-return:not(:empty):before {
   content: " ";
@@ -200,18 +201,18 @@ img {
   }
 
   .swiper-button-next::after {
-  color: ${(props) => props.theme.accentGrey};
+  color: ${theme.accentGrey};
 }
 
 .swiper-button-prev::after {
-  color: ${(props) => props.theme.accentGrey};
+  color: ${theme.accentGrey};
 }
 
 .swiper-pagination-bullet-active.swiper-pagination-bullet{
-  background-color: ${(props) => props.theme.accentBlue}!important;
+  background-color: ${theme.accentBlue}!important;
 }
 .swiper-pagination-bullet {
-  background-color:${(props) => props.theme.accentRed}!important;
+  background-color:${theme.accentRed}!important;
 }
 
 .containerJustifyEnd {
