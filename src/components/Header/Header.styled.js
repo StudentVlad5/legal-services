@@ -1,0 +1,45 @@
+import styled from 'styled-components';
+import { Container } from 'components/baseStyles/CommonStyle.styled';
+import { theme } from 'components/baseStyles/Variables.styled';
+import {ReactComponent as Icon_Logo} from "../../images/svg/brand_agency.svg";
+
+const HeaderSectionWrap = styled.header`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 10;
+  transition: background-color 0.3s ease-in-out;
+  ${({ isScrolled }) => isScrolled && `background-color: rgb(252, 249, 242);`};
+`;
+
+const HeaderContainer = styled(Container)`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 30px 0px 30px;
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    padding: 50px 120px 0px 120px;
+  }
+`;
+
+const IconLogo = styled(Icon_Logo)`
+width: 46px;
+height: 46px;
+`;
+
+const IconLogoContainer = styled.div`
+width: 46px;
+height: 46px;
+border-radius: 50%;
+`;
+
+export { HeaderContainer, HeaderSectionWrap, IconLogo, IconLogoContainer };

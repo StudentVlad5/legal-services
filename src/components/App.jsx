@@ -12,7 +12,6 @@ export const App = () => {
   return (
     <>
     <HeaderComp />
-    <div style={{display:"flex"}}>
       <Suspense fallback={'Loading...'}>
         <main>
           <Home/>
@@ -23,7 +22,6 @@ export const App = () => {
           <Сharity/>
         </main>
       </Suspense>
-    </div>
     <FooterComp />
   </>
   );
