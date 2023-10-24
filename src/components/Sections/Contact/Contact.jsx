@@ -1,5 +1,15 @@
+import {
+  Container,
+  Section,
+  Subtitle,
+} from 'components/baseStyles/CommonStyle.styled';
+
 export const Contact = () => {
   return (
-    <h3>Contact</h3>
+    <Section>
+      <Container>
+        <Subtitle>Contact</Subtitle>
+      </Container>
+    </Section>
   );
 };
