@@ -12,7 +12,6 @@ const MobileNavList = styled.nav`
   font-size: ${theme.medium};
   text-decoration: none;
   white-space: nowrap;
-  text-transform: uppercase;
   margin-top: 60px;
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
@@ -31,7 +30,7 @@ const NavList = styled(MobileNavList)`
     display: flex;
     flex-direction: row;
     justify-content: start;
-    gap: 82px;
+    gap: 24px;
     margin: 0px;
     /* width: 100%; */
   }

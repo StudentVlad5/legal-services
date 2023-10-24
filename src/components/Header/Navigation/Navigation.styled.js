@@ -8,7 +8,7 @@ const Container = styled.div`
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     width: 100%;
-    margin-left: 94px;
+    /* margin-left: 94px; */
   }
 `;
 

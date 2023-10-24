@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { SelectContainerLanguage, SelectLanguage } from './Language.styled';
 
 const Language = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
+  const [selectedLanguage, setSelectedLanguage] = useState('ua');
 
   useEffect(() => {
     const saveLanguage = localStorage.getItem('chosenLanguage');
@@ -13,8 +13,8 @@ const Language = () => {
     }
   }, []);
 
-  const changeLanguage = event => {
-    const language = event.target.value;
+  const changeLanguage = (e) => {
+    const language = e.target.value;
     i18next.changeLanguage(language);
     localStorage.setItem('chosenLanguage', language);
     setSelectedLanguage(language);
@@ -22,10 +22,12 @@ const Language = () => {
 
   return (
     <SelectContainerLanguage>
-      <SelectLanguage onChange={changeLanguage} value={selectedLanguage}>
-        <option value="en">En</option>
-        <option value="ua">Ua</option>
-      </SelectLanguage>
+      <label>EN
+      <SelectLanguage type="radio" id="en" name="language" value="en" onChange={changeLanguage} checked={selectedLanguage === "en"}/>
+      </label>
+      <label>UA
+      <SelectLanguage type="radio" id="ua" name="language" value="ua" onChange={changeLanguage} checked={selectedLanguage === "ua"}/>
+      </label> 
     </SelectContainerLanguage>
   );
 };

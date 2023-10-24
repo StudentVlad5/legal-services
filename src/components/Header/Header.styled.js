@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { Container } from 'components/baseStyles/CommonStyle.styled';
-import { theme } from 'components/baseStyles/Variables.styled';
-import {ReactComponent as Icon_Logo} from "../../images/svg/brand_agency.svg";
+import styled from "styled-components";
+import { Container } from "components/baseStyles/CommonStyle.styled";
+import { theme } from "components/baseStyles/Variables.styled";
+import { ReactComponent as Icon_Logo } from "../../images/svg/brand_agency.svg";
 
 const HeaderSectionWrap = styled.header`
   display: flex;
@@ -16,7 +16,8 @@ const HeaderSectionWrap = styled.header`
   transform: translate(-50%, 0%);
   z-index: 10;
   transition: background-color 0.3s ease-in-out;
-  ${({ isScrolled }) => isScrolled && `background-color: rgb(252, 249, 242);`};
+  background-color: ${({ props }) =>
+    props.$isscrolled === "true" ? "rgb(252, 249, 242)" : "transparent"};
 `;
 
 const HeaderContainer = styled(Container)`
@@ -30,16 +31,25 @@ const HeaderContainer = styled(Container)`
     padding: 50px 120px 0px 120px;
   }
 `;
+const LogoContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 330px;
+`;
 
 const IconLogo = styled(Icon_Logo)`
-width: 46px;
-height: 46px;
+  width: 46px;
+  height: 46px;
 `;
 
 const IconLogoContainer = styled.div`
-width: 46px;
-height: 46px;
-border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  margin: 4px;
+  border-radius: 50%;
 `;
 
-export { HeaderContainer, HeaderSectionWrap, IconLogo, IconLogoContainer };
+export { HeaderContainer, HeaderSectionWrap, LogoContainer, IconLogo, IconLogoContainer };

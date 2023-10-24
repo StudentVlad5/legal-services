@@ -66,4 +66,10 @@ a {
       height: 0;
   }
 }
+.headerNavigationItem.active {
+    color: ${theme.colors.granat};
+    transform: ${theme.scale[0]};
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+}
 `;

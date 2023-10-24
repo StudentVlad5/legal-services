@@ -6,7 +6,8 @@ import { MobileMenu } from 'components/Header/MobileMenu/MobileMenu';
 export const Menu = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleToggle = () => {
+  const handleToggle = (e) => {
+    e.preventDefault();
     setIsExpanded(!isExpanded);
   };
 

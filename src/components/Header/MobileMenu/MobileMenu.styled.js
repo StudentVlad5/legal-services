@@ -35,7 +35,7 @@ const Text = styled(Link)`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     font-size: ${theme.fontSizes.large};

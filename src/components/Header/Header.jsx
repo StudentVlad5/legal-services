@@ -6,21 +6,23 @@ import {
   HeaderContainer,
   HeaderSectionWrap,
   IconLogo,
-  IconLogoContainer
+  IconLogoContainer,
+  LogoContainer
 } from './Header.styled';
+import Language from "components/Language/Language";
 
 
 export const HeaderComp = () => {
  
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isscrolled, setIsScrolled] = useState("false");
 
   
     useEffect(() => {
       const handleScroll = () => {
         if (window.scrollY > 0) {
-          setIsScrolled(true);
+          setIsScrolled("true");
         } else {
-          setIsScrolled(false);
+          setIsScrolled("false");
         }
       };
   
@@ -32,15 +34,17 @@ export const HeaderComp = () => {
     }, []);
   
     return (
-      <HeaderSectionWrap isScrolled={isScrolled}>
+      <HeaderSectionWrap props={isscrolled}>
         <HeaderContainer>
-          <IconLogoContainer>
-            <IconLogo/>
-          </IconLogoContainer>
-          <Logo />
+          <LogoContainer>
+            <IconLogoContainer>
+              <IconLogo/>
+            </IconLogoContainer>
+            <Logo />
+          </LogoContainer>  
           <Menu />
-          {/* <Language /> */}
           <Navigation />
+          <Language />
         </HeaderContainer>
       </HeaderSectionWrap>
     );
