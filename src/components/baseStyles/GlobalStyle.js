@@ -14,6 +14,11 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: ${theme.breakpoints.desktop_max};
     width: 100%;
     min-height: calc(100vh - 50px);
   }
