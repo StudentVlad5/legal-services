@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/legal-services/static/css/main.7cda0caf.css",
-    "main.js": "/legal-services/static/js/main.eae05642.js",
+    "main.js": "/legal-services/static/js/main.6891aac4.js",
     "static/media/brand_agency.svg": "/legal-services/static/media/brand_agency.e6a07caf5ab8a7cd4a56314afb8c2671.svg",
     "index.html": "/legal-services/index.html",
     "static/media/icon_close.svg": "/legal-services/static/media/icon_close.260c96aba626d6a8d203d583f1cf31cb.svg",
     "static/media/icon_menu.svg": "/legal-services/static/media/icon_menu.4287e90eebb410a64c7d6402780b62c7.svg",
     "main.7cda0caf.css.map": "/legal-services/static/css/main.7cda0caf.css.map",
-    "main.eae05642.js.map": "/legal-services/static/js/main.eae05642.js.map"
+    "main.6891aac4.js.map": "/legal-services/static/js/main.6891aac4.js.map"
   },
   "entrypoints": [
     "static/css/main.7cda0caf.css",
-    "static/js/main.eae05642.js"
+    "static/js/main.6891aac4.js"
   ]
 }
