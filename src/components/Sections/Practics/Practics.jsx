@@ -1,6 +1,15 @@
-export const Practics = () => {
+import {
+  Container,
+  Section,
+  Subtitle,
+} from 'components/baseStyles/CommonStyle.styled';
 
+export const Practics = () => {
   return (
-    <h3>Practics</h3>
+    <Section>
+      <Container>
+        <Subtitle>Practics</Subtitle>
+      </Container>
+    </Section>
   );
 };

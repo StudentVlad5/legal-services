@@ -1,16 +1,15 @@
 export const theme = {
-  colors:{
-  white: "#FFFFFF",
-  black: "#000000",
-  blackOpacity: "rgba(0, 0, 0, 0.9)",
-  text: "#564040",
-  grey: "#FFFBF4",
-  red_grey: "#3F3737",
-  granat: "#B40220",
-  back_green: "#4D6B6C",
-
+  colors: {
+    white: '#FFFFFF',
+    black: '#000000',
+    blackOpacity: 'rgba(0, 0, 0, 0.9)',
+    text: '#564040',
+    grey: '#FFFBF4',
+    red_grey: '#3F3737',
+    granat: '#B40220',
+    back_green: '#4D6B6C',
   },
-  fonts:["Fira Sans Condensed", "Roboto Condensed", "Spectral"],
+  fonts: ['Fira Sans Condensed', 'Roboto Condensed', 'Spectral'],
   breakpoints: {
     mobile: '375px',
     tablet: '768px',

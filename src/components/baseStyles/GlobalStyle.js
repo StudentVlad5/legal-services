@@ -1,6 +1,6 @@
-import "modern-normalize";
-import { createGlobalStyle } from "styled-components";
-import { theme } from "./Variables.styled";
+import 'modern-normalize';
+import { createGlobalStyle } from 'styled-components';
+import { theme } from './Variables.styled';
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -43,6 +43,8 @@ img {
 a {
   text-decoration: none;
 }
+
+//-----modal-----//
 #popup-root {
   position: fixed;
   top: 0;
@@ -71,12 +73,16 @@ a {
       height: 0;
   }
 }
+
+//-----navigation-----//
 .headerNavigationItem.active {
     color: ${theme.colors.granat};
     transform: ${theme.scale[0]};
     text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.2);
     font-weight: 700;
 }
+
+//-----translate-----//
 .language.active {
     transform: ${theme.scale[0]};
     text-decoration: underline;

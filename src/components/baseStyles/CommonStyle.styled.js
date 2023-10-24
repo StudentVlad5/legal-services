@@ -1,68 +1,92 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+import { theme } from 'components/baseStyles/Variables.styled';
 
-const puffInCenterAnimation = keyframes`
-  0% {
-    transform: scale(2);
-    filter: blur(4px);
-    opacity: 0;
+const Section = styled.section`
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0 60px 0;
+  width: 100%;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    padding: 0 0 80px 0;
   }
-  100% {
-    transform: scale(1);
-    filter: blur(0px);
-    opacity: 1;
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    padding: 0 0 120px 0;
+    max-width: ${theme.breakpoints.desktop};
   }
 `;
 
 const Container = styled.div`
   width: 100%;
   margin: 0 auto;
-  padding: 50px 35px 70px;
+  padding: 0 70px;
 
-  @media screen and (min-width: 768px) {
-    padding: 90px 60px;
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    padding: 0 90px;
   }
 
-  @media screen and (min-width: 1280px) {
-    padding: 100px 100px 100px 30px;
-    max-width: 1280px;
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    padding: 0 120px;
+    max-width: ${theme.breakpoints.desktop};
   }
 `;
 
 const Title = styled.h1`
   display: inline-block;
-  margin: 40px 0 15px 0;
-  animation: ${puffInCenterAnimation} 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
-    both;
 
-  font-size: 32px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: ${theme.fonts[2]};
+  font-size: 36px;
   font-style: normal;
-  font-weight: 900;
-  line-height: 65px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  background: linear-gradient(
-    to left,
-    rgba(65, 45, 183, 1),
-    rgba(219, 47, 47, 1) 120%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  font-weight: 500;
+  line-height: normal;
+  color: ${theme.colors.white};
 
-  @media screen and (min-width: 768px) {
-    margin: 0 0 25px 0;
-    font-size: 55px;
-    /* letter-spacing: -4.88px; */
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    font-size: 42px;
   }
 
-  @media screen and (min-width: 1280px) {
-    margin: 0 0 35px 0;
-    font-size: 55px;
-    /* letter-spacing: -6.58px; */
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 64px;
   }
 `;
 
+const Subtitle = styled.h2`
+  display: inline-block;
 
-export { Container, Title };
+  font-family: ${theme.fonts[2]};
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 83.333% */
+  text-transform: uppercase;
+  color: ${theme.colors.text};
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 36px;
+  }
+`;
+
+const Heading = styled.p`
+  font-family: ${theme.fonts[1]};
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  color: ${theme.colors.granat};
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 18px;
+  }
+`;
+
+export { Section, Container, Title, Subtitle, Heading };

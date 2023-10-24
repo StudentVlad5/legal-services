@@ -4,11 +4,11 @@ import {
   Subtitle,
 } from 'components/baseStyles/CommonStyle.styled';
 
-export const Teams = () => {
+export const Charity = () => {
   return (
     <Section>
       <Container>
-        <Subtitle>Teams</Subtitle>
+        <Subtitle>Charity</Subtitle>
       </Container>
     </Section>
   );

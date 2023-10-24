@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { Container } from "components/baseStyles/CommonStyle.styled";
-import { theme } from "components/baseStyles/Variables.styled";
-import { ReactComponent as Icon_Logo } from "../../images/svg/brand_agency.svg";
+import styled from 'styled-components';
+import { Container } from 'components/baseStyles/CommonStyle.styled';
+import { theme } from 'components/baseStyles/Variables.styled';
+import { ReactComponent as Icon_Logo } from '../../images/svg/brand_agency.svg';
 
 const HeaderSectionWrap = styled.header`
   display: flex;
@@ -17,7 +17,7 @@ const HeaderSectionWrap = styled.header`
   z-index: 10;
   transition: background-color 0.3s ease-in-out;
   background-color: ${({ props }) =>
-    props.$isscrolled === "true" ? "rgb(252, 249, 242)" : "transparent"};
+    props.$isscrolled === 'true' ? 'rgb(252, 249, 242)' : 'transparent'};
 `;
 
 const HeaderContainer = styled(Container)`
@@ -25,10 +25,10 @@ const HeaderContainer = styled(Container)`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 40px 30px 0px 30px;
+  padding: 40px 30px;
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
-    padding: 50px 120px 0px 120px;
+    padding: 60px 120px;
   }
 `;
 const LogoContainer = styled.div`
