@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { MobileNavList, NavList, NavItem } from './Nav.styled';
 import { useTranslation } from 'react-i18next';
+import Language from '../Language/Language';
 
 const handleChangeActiveClass = (e) => {
   e.preventDefault();
   const navItemList = document.querySelectorAll(".headerNavigationItem");
-  console.log(navItemList);
   if(navItemList){navItemList.forEach(it => {if(it.dataset.info === e.target.dataset.info){it.classList.add('active')}else{it.classList.remove('active')}})};
 }
 
@@ -35,6 +35,7 @@ export const MobileNav = ({ toggleMenu }) => {
       <NavItem to="#charity" className="headerNavigationItem" data-info="charity" onClick={(e)=>{toggleMenu(e); handleChangeActiveClass(e)}}>
         {t('Благодійність')}
       </NavItem>
+      <Language/>
     </MobileNavList>
   );
 };
@@ -62,6 +63,7 @@ export const Nav = () => {
       <NavItem to="#charity" className="headerNavigationItem" data-info="charity" onClick={(e)=>handleChangeActiveClass(e)}>
         {t('Благодійність')}
       </NavItem>
+      <Language />
       </NavList>
   );
 };

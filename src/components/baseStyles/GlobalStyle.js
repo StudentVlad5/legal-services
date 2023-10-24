@@ -72,4 +72,8 @@ a {
     text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.2);
     font-weight: 700;
 }
+.language.active {
+    transform: ${theme.scale[0]};
+    text-decoration: underline;
+}
 `;

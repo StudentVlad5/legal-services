@@ -9,7 +9,7 @@ import {
   IconLogoContainer,
   LogoContainer
 } from './Header.styled';
-import Language from "components/Language/Language";
+
 
 
 export const HeaderComp = () => {
@@ -44,7 +44,6 @@ export const HeaderComp = () => {
           </LogoContainer>  
           <Menu />
           <Navigation />
-          <Language />
         </HeaderContainer>
       </HeaderSectionWrap>
     );

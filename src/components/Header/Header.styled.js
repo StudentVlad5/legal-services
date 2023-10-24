@@ -52,4 +52,10 @@ const IconLogoContainer = styled.div`
   border-radius: 50%;
 `;
 
-export { HeaderContainer, HeaderSectionWrap, LogoContainer, IconLogo, IconLogoContainer };
+export {
+  HeaderContainer,
+  HeaderSectionWrap,
+  LogoContainer,
+  IconLogo,
+  IconLogoContainer,
+};
