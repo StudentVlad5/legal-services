@@ -1,12 +1,13 @@
 import { HeaderComp } from './Header/Header';
 import { Home } from './Sections/Home/Home';
 import { About } from './Sections/About/About';
-import { Contact } from './Sections/Contact/Contact';
+import { Partners } from './Sections/Partners/Partners';
 import { Practics } from './Sections/Practics/Practics';
-import { Members } from "./Sections/Members/Members";
+import { Teams } from "./Sections/Teams/Teams";
 import { Сharity } from "./Sections/Сharity/Сharity";
 import { Suspense } from 'react';
 import { FooterComp } from './Footer/Footer';
+import { Adventages } from './Sections/Adventages/Adventages';
 
 export const App = () => {
   return (
@@ -17,8 +18,9 @@ export const App = () => {
           <Home/>
           <About />
           <Practics/>       
-          <Members/>
-          <Contact/>
+          <Teams/>
+          <Adventages/>
+          <Partners/>
           <Сharity/>
         </main>
       </Suspense>
