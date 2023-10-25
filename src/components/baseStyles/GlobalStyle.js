@@ -18,9 +18,11 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: ${theme.breakpoints.desktop_max};
+
     width: 100%;
+    max-width: ${theme.breakpoints.desktop};
     min-height: calc(100vh - 50px);
+    margin:0 auto;
   }
 
 //-----reset-----//
@@ -37,7 +39,8 @@ ul {
 
 img {
   display:block;
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: auto;
   height: auto;
 }
 a {

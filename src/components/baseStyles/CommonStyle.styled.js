@@ -20,10 +20,14 @@ const Section = styled.section`
 const Container = styled.div`
   width: 100%;
   margin: 0 auto;
-  padding: 0 70px;
+  padding: 0 10px;
+
+  @media screen and (min-width: ${theme.breakpoints.mobile}) {
+    padding: 0 30px;
+  }
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    padding: 0 90px;
+    padding: 0 70px;
   }
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
@@ -48,6 +52,21 @@ const Title = styled.h1`
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     font-size: 64px;
+  }
+`;
+
+const TitleGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    gap: 12px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    gap: 16px;
   }
 `;
 
@@ -89,4 +108,25 @@ const Subtitle = styled.p`
   }
 `;
 
-export { Section, Container, Title, SectionTitle, Subtitle };
+const Description = styled.p`
+  font-family: ${theme.fonts[1]};
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  color: ${props => (props.$white ? theme.colors.white : theme.colors.text)};
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 16px;
+  }
+`;
+
+export {
+  Section,
+  Container,
+  Title,
+  TitleGroup,
+  SectionTitle,
+  Subtitle,
+  Description,
+};

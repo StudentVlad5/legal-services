@@ -17,7 +17,7 @@ const HeaderSectionWrap = styled.header`
   z-index: 100;
   transition: background-color 0.3s ease-in-out;
   background-color: ${({ props }) =>
-    props.$isscrolled === 'true' ? 'rgb(252, 249, 242)' : 'transparent'};
+    props === 'true' ? 'rgb(252, 249, 242)' : 'transparent'};
 `;
 
 const HeaderContainer = styled(Container)`
@@ -34,7 +34,7 @@ const HeaderContainer = styled(Container)`
 const LogoContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   min-width: 330px;

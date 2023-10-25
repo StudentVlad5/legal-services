@@ -17,9 +17,11 @@ import hero_desk_2x_webp from 'images/hero/hero-desk@2x.webp';
 
 export const HeroSection = styled(Section)`
   padding-top: 134px;
+  padding-bottom: 0;
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     padding-top: 174px;
+    padding-bottom: 0;
   }
 `;
 
@@ -72,7 +74,7 @@ export const Hero = styled.div`
   }
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    max-width: ${theme.breakpoints.tablet};
+    /* max-width: ${theme.breakpoints.tablet}; */
     height: 494px;
     background-size: contain, 50vw 494px;
     background-image: linear-gradient(
@@ -113,7 +115,7 @@ export const Hero = styled.div`
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     max-width: ${theme.breakpoints.desktop};
     height: 658px;
-    background-size: contain, 50vw 658px;
+    background-size: contain;
     background-image: linear-gradient(
         89deg,
         #750115 0.52%,
@@ -178,14 +180,15 @@ export const TitleGroup = styled.div`
 
 export const UpperTitle = styled.p`
   font-family: ${theme.fonts[1]};
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   color: ${theme.colors.white};
+  text-transform: uppercase;
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    font-size: 21px;
+    font-size: 20px;
   }
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
@@ -195,7 +198,7 @@ export const UpperTitle = styled.p`
 
 export const Connect = styled.a`
   margin-top: 11px;
-  padding: 13px 26px;
+  padding: 13px;
 
   font-family: ${theme.fonts[1]};
   font-size: 12px;
@@ -204,10 +207,16 @@ export const Connect = styled.a`
   line-height: normal;
   color: ${theme.colors.white};
   text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
 
   border-radius: 4px;
   border: 1px solid ${theme.colors.white};
   cursor: pointer;
+
+  @media screen and (min-width: ${theme.breakpoints.mobile}) {
+    padding: 13px 26px;
+  }
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     font-size: 14px;
