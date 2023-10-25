@@ -38,7 +38,7 @@ export const Partners = () => {
         <PartnerSubtitle>Наші партнери</PartnerSubtitle>
         <PartnerHeading>УКРАЇНСЬКІ КАМПАНІЇ</PartnerHeading>
         <PartnerItemContainer>
-          {data.map(it=><PartnerItem><PartnerImgWrap><PartnerImg src={it.image} alt={it.title}/></PartnerImgWrap><ItemContentContainer>
+          {data.map((it,ind)=><PartnerItem key={ind}><PartnerImgWrap><PartnerImg src={it.image} alt={it.title}/></PartnerImgWrap><ItemContentContainer>
             <ItemContentTitle>{it.title}</ItemContentTitle><ItemContent>{it.content}</ItemContent></ItemContentContainer></PartnerItem>)}
         </PartnerItemContainer>
       </PartnerContainer>

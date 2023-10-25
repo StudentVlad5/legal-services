@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Language from '../Language/Language';
 
 const handleChangeActiveClass = (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   const navItemList = document.querySelectorAll(".headerNavigationItem");
   if(navItemList){navItemList.forEach(it => {if(it.dataset.info === e.target.dataset.info){it.classList.add('active')}else{it.classList.remove('active')}})};
 }

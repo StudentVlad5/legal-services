@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   font-family: -apple-system, BlinkMacSystemFont, "Fira Sans Condensed", "Roboto Condensed", "Spectral";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+  scroll-behavior: smooth;
   background-color: ${theme.colors.white};
   color:${theme.colors.black}
   }
