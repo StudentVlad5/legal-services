@@ -1,10 +1,10 @@
+import styled from 'styled-components';
+import { theme } from 'components/baseStyles/Variables.styled';
 import {
   Container,
   Section,
-  Subtitle,
-} from "components/baseStyles/CommonStyle.styled";
-import { theme } from "components/baseStyles/Variables.styled";
-import styled from "styled-components";
+  SectionTitle,
+} from 'components/baseStyles/CommonStyle.styled';
 
 const AdvantageSection = styled(Section)`
   position: relative;
@@ -19,7 +19,7 @@ const AdvantageContainer = styled(Container)`
   align-items: center;
   flex-direction: column;
 `;
-const AdvantageSubtitle = styled(Subtitle)`
+const AdvantageSectionTitle = styled(SectionTitle)`
   text-align: center;
   margin-bottom: 60px;
 `;
@@ -36,11 +36,11 @@ const AdvantageItemContainer = styled.ul`
   }
 `;
 const AdvantageItem = styled.li`
-max-width: 387px;
-max-height: 283px;
-z-index: 10;
-overflow: hidden;
-/* background-color: ${theme.colors.white}; */
+  max-width: 387px;
+  max-height: 283px;
+  z-index: 10;
+  overflow: hidden;
+  /* background-color: ${theme.colors.white}; */
 `;
 const ItemContentContainer = styled.div`
   display: inline-block;
@@ -65,7 +65,7 @@ const NumberOfItem = styled.div`
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  float:left;
+  float: left;
   margin: 6px 16px 6px 0;
   color: ${theme.colors.granat};
   font-family: ${theme.fonts[1]};
@@ -73,7 +73,7 @@ const NumberOfItem = styled.div`
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; 
+  line-height: 24px;
 `;
 const ItemContent = styled(ItemContentTitle)`
   color: ${theme.colors.text};
@@ -96,7 +96,7 @@ const BackgroundSvgVector = styled.div`
 export {
   AdvantageSection,
   AdvantageContainer,
-  AdvantageSubtitle,
+  AdvantageSectionTitle,
   AdvantageItemContainer,
   AdvantageItem,
   ItemContentContainer,

@@ -1,14 +1,14 @@
 import {
   Container,
   Section,
-  Subtitle,
+  SectionTitle,
 } from 'components/baseStyles/CommonStyle.styled';
 
 export const About = () => {
   return (
     <Section>
       <Container>
-        <Subtitle>About us</Subtitle>
+        <SectionTitle>About us</SectionTitle>
       </Container>
     </Section>
   );

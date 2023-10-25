@@ -1,15 +1,24 @@
+import { Title } from 'components/baseStyles/CommonStyle.styled';
 import {
-  Container,
-  Section,
-  Title,
-} from 'components/baseStyles/CommonStyle.styled';
+  Connect,
+  Hero,
+  HeroSection,
+  TitleGroup,
+  UpperTitle,
+} from './Home.styled';
 
 export const Home = () => {
   return (
-    <Section>
-      <Container>
-        <Title>Рішення, засновані на законі та досвіді</Title>
-      </Container>
-    </Section>
+    <HeroSection id="home">
+      <Hero>
+        <TitleGroup>
+          <UpperTitle>Знаходимо</UpperTitle>
+          <Title>Рішення, засновані на законі та досвіді</Title>
+          <Connect href="#contact" aria-label="Зв’язатись з нами">
+            Зв’язатись з нами
+          </Connect>
+        </TitleGroup>
+      </Hero>
+    </HeroSection>
   );
 };

@@ -6,7 +6,7 @@ const Section = styled.section`
   margin: 0 auto;
   padding: 0 0 60px 0;
   width: 100%;
-  
+
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     padding: 0 0 80px 0;
   }
@@ -39,11 +39,11 @@ const Title = styled.h1`
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   color: ${theme.colors.white};
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     font-size: 42px;
+    line-height: normal;
   }
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
@@ -51,7 +51,7 @@ const Title = styled.h1`
   }
 `;
 
-const Subtitle = styled.h2`
+const SectionTitle = styled.h2`
   display: inline-block;
 
   font-family: ${theme.fonts[2]};
@@ -71,7 +71,7 @@ const Subtitle = styled.h2`
   }
 `;
 
-const Heading = styled.p`
+const Subtitle = styled.p`
   font-family: ${theme.fonts[1]};
   font-size: 12px;
   font-style: normal;
@@ -89,4 +89,4 @@ const Heading = styled.p`
   }
 `;
 
-export { Section, Container, Title, Subtitle, Heading };
+export { Section, Container, Title, SectionTitle, Subtitle };
