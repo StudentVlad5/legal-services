@@ -86,17 +86,17 @@ export const Box = styled.div`
 export const ImageBox = styled.div`
   position: relative;
   width: 215px;
-  height: 242px;
+  height: 205px;
   /* overflow: hidden; */
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    width: 230px;
-    height: 262px;
+    width: 240px;
+    height: 230px;
   }
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     width: 386px;
-    height: 440px;
+    height: 360px;
   }
 
   & > picture {
@@ -115,8 +115,8 @@ export const Gradient = styled.div`
   top: 20px;
   left: 20px;
 
-  width: 191px;
-  height: 181px;
+  width: 193px;
+  height: 185px;
 
   border-radius: 4px;
   background: linear-gradient(0deg, #567a7b 0%, rgba(234, 252, 241, 0) 100%);
@@ -124,12 +124,12 @@ export const Gradient = styled.div`
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     width: 220px;
-    height: 212px;
+    height: 210px;
   }
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     width: 366px;
-    height: 360px;
+    height: 350px;
   }
 `;
 
