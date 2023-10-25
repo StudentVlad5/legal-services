@@ -34,7 +34,7 @@ export const About = () => {
   return (
     <AboutSection>
       <AboutContainer>
-        <AboutTitleGroup>
+        <AboutTitleGroup $mobile>
           <SectionTitle>Про нас </SectionTitle>
           <Subtitle>Маєм доствід та репутацію</Subtitle>
         </AboutTitleGroup>
@@ -69,6 +69,10 @@ export const About = () => {
             <Gradient />
           </ImageBox>
           <DescriptionGroup>
+            <AboutTitleGroup>
+              <SectionTitle>Про нас </SectionTitle>
+              <Subtitle>Маєм доствід та репутацію</Subtitle>
+            </AboutTitleGroup>
             <DescriptionHeading>
               <TextBox>
                 <MasterLetter>A</MasterLetter>

@@ -46,7 +46,7 @@ export const AboutContainer = styled(Container)`
 `;
 
 export const AboutTitleGroup = styled(TitleGroup)`
-  display: flex;
+  display: ${props => (props.$mobile ? 'flex' : 'none')};
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
@@ -58,7 +58,9 @@ export const AboutTitleGroup = styled(TitleGroup)`
   }
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    display: ${props => (props.$mobile ? 'none' : 'flex')};
     gap: 16px;
+    margin-top: ${props => (props.$mobile ? '0' : '51px')};
     margin-bottom: 32px;
   }
 `;
@@ -175,7 +177,7 @@ export const MasterLetter = styled.span`
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     font-size: 58px;
-    line-height: 120%; /* 69.6px */
+    /* line-height: 120%;  */
   }
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
