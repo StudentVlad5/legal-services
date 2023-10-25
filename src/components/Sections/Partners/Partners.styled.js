@@ -43,10 +43,11 @@ const PartnerItemContainer = styled.ul`
 `;
 const PartnerItem = styled.li`
   max-width: 387px;
-  max-height: 283px;
   z-index: 10;
   overflow: hidden;
   /* background-color: ${theme.colors.white}; */
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+  max-height: 283px;}
 `;
 const PartnerImg = styled.img`
   width: 200px;
