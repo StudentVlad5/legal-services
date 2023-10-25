@@ -1,11 +1,35 @@
 {
   "files": {
     "main.css": "/legal-services/static/css/main.7cda0caf.css",
-    "main.js": "/legal-services/static/js/main.d3540449.js",
+    "main.js": "/legal-services/static/js/main.3a455e82.js",
+    "static/media/about_desk@2x.png": "/legal-services/static/media/about_desk@2x.40846a1ebcd888b46074.png",
+    "static/media/about_tab@2x.png": "/legal-services/static/media/about_tab@2x.990d0f48bcf7a4baf7b9.png",
+    "static/media/about_mob@2x.png": "/legal-services/static/media/about_mob@2x.697e752e1e6928f70d3d.png",
+    "static/media/about_desk@2x.webp": "/legal-services/static/media/about_desk@2x.74ebaebe61032f15a6b9.webp",
+    "static/media/about_desk.png": "/legal-services/static/media/about_desk.137be804fc096cf10854.png",
+    "static/media/about_tab@2x.webp": "/legal-services/static/media/about_tab@2x.e483c9c9e8fd875a6858.webp",
+    "static/media/about_tab.png": "/legal-services/static/media/about_tab.723ae85ab0cb4f058a1c.png",
+    "static/media/hero-desk@2x.jpg": "/legal-services/static/media/hero-desk@2x.8921f4ae18fd76da4a60.jpg",
+    "static/media/about_mob@2x.webp": "/legal-services/static/media/about_mob@2x.eed5e777c90089327e55.webp",
+    "static/media/about_desk.webp": "/legal-services/static/media/about_desk.a6a6eef47ebd86f211a6.webp",
+    "static/media/about_mob.png": "/legal-services/static/media/about_mob.3623108b7b0ec203f466.png",
     "static/media/brand_agency.svg": "/legal-services/static/media/brand_agency.e6a07caf5ab8a7cd4a56314afb8c2671.svg",
+    "static/media/hero-tab@2x.jpg": "/legal-services/static/media/hero-tab@2x.2ca13081acf4473bac84.jpg",
+    "static/media/hero-mob@2x.jpg": "/legal-services/static/media/hero-mob@2x.d93c19218466d0c377a7.jpg",
+    "static/media/hero-desk@2x.webp": "/legal-services/static/media/hero-desk@2x.7fc095bd88188473bb5a.webp",
+    "static/media/hero-desk.jpg": "/legal-services/static/media/hero-desk.50510fa9ab48606c42b0.jpg",
     "static/media/mother_2x.webp": "/legal-services/static/media/mother_2x.48efefb2fc509fd27f39.webp",
+    "static/media/about_tab.webp": "/legal-services/static/media/about_tab.d8df2a9e6b447dfcff95.webp",
+    "static/media/hero-tab@2x.webp": "/legal-services/static/media/hero-tab@2x.b85e3d8460b9c8dfbf7c.webp",
+    "static/media/hero-tab.jpg": "/legal-services/static/media/hero-tab.bddff40a1ea7cbb39491.jpg",
+    "static/media/about_mob.webp": "/legal-services/static/media/about_mob.f6a2a119624c4e142401.webp",
+    "static/media/hero-mob.jpg": "/legal-services/static/media/hero-mob.50f9b124ff014388e479.jpg",
+    "static/media/hero-mob@2x.webp": "/legal-services/static/media/hero-mob@2x.c83ed5b31f9458f310f9.webp",
+    "static/media/hero-desk.webp": "/legal-services/static/media/hero-desk.26e199d79f5e2ddb3d45.webp",
     "static/media/mother_1x.webp": "/legal-services/static/media/mother_1x.fba2f06a13accd07b2dd.webp",
+    "static/media/hero-tab.webp": "/legal-services/static/media/hero-tab.9652a337d1d6d8ab215c.webp",
     "static/media/ptz.webp": "/legal-services/static/media/ptz.c2c0e77fdf8b73d23412.webp",
+    "static/media/hero-mob.webp": "/legal-services/static/media/hero-mob.57cd92aec290ef51304e.webp",
     "index.html": "/legal-services/index.html",
     "static/media/zbk1.webp": "/legal-services/static/media/zbk1.16bfe16579a561c0e748.webp",
     "static/media/svit_it.webp": "/legal-services/static/media/svit_it.6a82bd0e5eb0b31a5c85.webp",
@@ -16,10 +40,10 @@
     "static/media/icon_close.svg": "/legal-services/static/media/icon_close.260c96aba626d6a8d203d583f1cf31cb.svg",
     "static/media/icon_menu.svg": "/legal-services/static/media/icon_menu.4287e90eebb410a64c7d6402780b62c7.svg",
     "main.7cda0caf.css.map": "/legal-services/static/css/main.7cda0caf.css.map",
-    "main.d3540449.js.map": "/legal-services/static/js/main.d3540449.js.map"
+    "main.3a455e82.js.map": "/legal-services/static/js/main.3a455e82.js.map"
   },
   "entrypoints": [
     "static/css/main.7cda0caf.css",
-    "static/js/main.d3540449.js"
+    "static/js/main.3a455e82.js"
   ]
 }
