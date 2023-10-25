@@ -6,7 +6,7 @@ const Section = styled.section`
   margin: 0 auto;
   padding: 0 0 60px 0;
   width: 100%;
-
+  
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     padding: 0 0 80px 0;
   }
