@@ -1,16 +1,23 @@
 {
   "files": {
     "main.css": "/legal-services/static/css/main.7cda0caf.css",
-    "main.js": "/legal-services/static/js/main.335f7cdc.js",
+    "main.js": "/legal-services/static/js/main.43c54046.js",
     "static/media/brand_agency.svg": "/legal-services/static/media/brand_agency.e6a07caf5ab8a7cd4a56314afb8c2671.svg",
+    "static/media/ptz.webp": "/legal-services/static/media/ptz.c2c0e77fdf8b73d23412.webp",
     "index.html": "/legal-services/index.html",
+    "static/media/zbk1.webp": "/legal-services/static/media/zbk1.16bfe16579a561c0e748.webp",
+    "static/media/svit_it.webp": "/legal-services/static/media/svit_it.6a82bd0e5eb0b31a5c85.webp",
+    "static/media/extrime.webp": "/legal-services/static/media/extrime.78b5341308cf6db0aa51.webp",
+    "static/media/petrus.webp": "/legal-services/static/media/petrus.5c6575f1632b90a22273.webp",
+    "static/media/big_vector.svg": "/legal-services/static/media/big_vector.22e59189bd6e586dbacce83dd68d243b.svg",
+    "static/media/small_vector.svg": "/legal-services/static/media/small_vector.570d804afaecfc472a22ba2f825a287d.svg",
     "static/media/icon_close.svg": "/legal-services/static/media/icon_close.260c96aba626d6a8d203d583f1cf31cb.svg",
     "static/media/icon_menu.svg": "/legal-services/static/media/icon_menu.4287e90eebb410a64c7d6402780b62c7.svg",
     "main.7cda0caf.css.map": "/legal-services/static/css/main.7cda0caf.css.map",
-    "main.335f7cdc.js.map": "/legal-services/static/js/main.335f7cdc.js.map"
+    "main.43c54046.js.map": "/legal-services/static/js/main.43c54046.js.map"
   },
   "entrypoints": [
     "static/css/main.7cda0caf.css",
-    "static/js/main.335f7cdc.js"
+    "static/js/main.43c54046.js"
   ]
 }
