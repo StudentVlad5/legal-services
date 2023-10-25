@@ -6,28 +6,29 @@ import {
   CharityImgContainer,
   CharityImg,
   CharityImgPhone,
-  ItemContentTitle
+  ItemContentTitle,
 } from './Charity.styled';
-import Mather_2 from "../../../images/charity/mother_2x.webp";
-import PlaceholderImage from "../../../images/charity/mother_1x.webp";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import Mather_2 from '../../../images/charity/mother_2x.webp';
+import PlaceholderImage from '../../../images/charity/mother_1x.webp';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const Charity = () => {
   return (
     <CharitySection id="charity">
       <CharityContainer>
         <CharityImgContainer>
-            <CharityImgPhone/>
-            <CharityImg>
-              <LazyLoadImage src={Mather_2}
+          <CharityImgPhone />
+          <CharityImg>
+            <LazyLoadImage
+              src={Mather_2}
               PlaceholderSrc={PlaceholderImage}
               alt="Image Charity"
               effect="blur"
-              />
-            </CharityImg>
+            />
+          </CharityImg>
         </CharityImgContainer>
         <CharityContentContainer>
-          <CharitySubtitle>Charity</CharitySubtitle>
+          <CharitySubtitle>Благодійність</CharitySubtitle>
           <ItemContentTitle>ПІДЗАГОЛОВОК</ItemContentTitle>
         </CharityContentContainer>
       </CharityContainer>
