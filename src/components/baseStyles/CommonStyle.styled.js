@@ -71,8 +71,6 @@ const TitleGroup = styled.div`
 `;
 
 const SectionTitle = styled.h2`
-  display: inline-block;
-
   font-family: ${theme.fonts[2]};
   font-size: 24px;
   font-style: normal;
@@ -121,6 +119,43 @@ const Description = styled.p`
   }
 `;
 
+const LinkBtn = styled.a`
+  padding: 13px;
+
+  font-family: ${theme.fonts[1]};
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: ${theme.colors.text};
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  border-radius: 4px;
+  border: 1px solid ${theme.colors.granat};
+  cursor: pointer;
+
+  @media screen and (min-width: ${theme.breakpoints.mobile}) {
+    padding: 13px 26px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    color: ${theme.colors.granat};
+    background-color: ${theme.colors.white};
+    border: 1px solid ${theme.colors.white};
+  }
+`;
+
 export {
   Section,
   Container,
@@ -129,4 +164,5 @@ export {
   SectionTitle,
   Subtitle,
   Description,
+  LinkBtn,
 };

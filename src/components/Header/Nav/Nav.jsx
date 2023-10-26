@@ -4,38 +4,92 @@ import { MobileNavList, NavList, NavItem } from './Nav.styled';
 import { useTranslation } from 'react-i18next';
 import Language from '../Language/Language';
 
-const handleChangeActiveClass = (e) => {
+const handleChangeActiveClass = e => {
   // e.preventDefault();
-  const navItemList = document.querySelectorAll(".headerNavigationItem");
-  if(navItemList){navItemList.forEach(it => {if(it.dataset.info === e.target.dataset.info){it.classList.add('active')}else{it.classList.remove('active')}})};
-}
-
-
+  const navItemList = document.querySelectorAll('.headerNavigationItem');
+  if (navItemList) {
+    navItemList.forEach(it => {
+      if (it.dataset.info === e.target.dataset.info) {
+        it.classList.add('active');
+      } else {
+        it.classList.remove('active');
+      }
+    });
+  }
+};
 
 export const MobileNav = ({ toggleMenu }) => {
   const { t } = useTranslation();
 
   return (
     <MobileNavList>
-      <NavItem to="#about" className="headerNavigationItem active" data-info="about" onClick={(e)=>{toggleMenu(e); handleChangeActiveClass(e)}}>
+      <NavItem
+        to="#about"
+        className="headerNavigationItem active"
+        data-info="about"
+        onClick={e => {
+          toggleMenu(e);
+          handleChangeActiveClass(e);
+        }}
+      >
         {t('Про нас')}
       </NavItem>
-      <NavItem to="#practics" className="headerNavigationItem" data-info="practics" onClick={(e)=>{toggleMenu(e); handleChangeActiveClass(e)}}>
+      <NavItem
+        to="#practices"
+        className="headerNavigationItem"
+        data-info="practices"
+        onClick={e => {
+          toggleMenu(e);
+          handleChangeActiveClass(e);
+        }}
+      >
         {t('Практики')}
       </NavItem>
-      <NavItem to="#team" className="headerNavigationItem" data-info="team" onClick={(e)=>{toggleMenu(e); handleChangeActiveClass(e)}}>
+      <NavItem
+        to="#team"
+        className="headerNavigationItem"
+        data-info="team"
+        onClick={e => {
+          toggleMenu(e);
+          handleChangeActiveClass(e);
+        }}
+      >
         {t('Команда')}
       </NavItem>
-      <NavItem to="#advantages" className="headerNavigationItem" data-info="advantages" onClick={(e)=>{toggleMenu(e); handleChangeActiveClass(e)}}>
+      <NavItem
+        to="#advantages"
+        className="headerNavigationItem"
+        data-info="advantages"
+        onClick={e => {
+          toggleMenu(e);
+          handleChangeActiveClass(e);
+        }}
+      >
         {t('Переваги')}
       </NavItem>
-      <NavItem to="#partners" className="headerNavigationItem" data-info="partners" onClick={(e)=>{toggleMenu(e); handleChangeActiveClass(e)}}>
+      <NavItem
+        to="#partners"
+        className="headerNavigationItem"
+        data-info="partners"
+        onClick={e => {
+          toggleMenu(e);
+          handleChangeActiveClass(e);
+        }}
+      >
         {t('Партнери')}
       </NavItem>
-      <NavItem to="#charity" className="headerNavigationItem" data-info="charity" onClick={(e)=>{toggleMenu(e); handleChangeActiveClass(e)}}>
+      <NavItem
+        to="#charity"
+        className="headerNavigationItem"
+        data-info="charity"
+        onClick={e => {
+          toggleMenu(e);
+          handleChangeActiveClass(e);
+        }}
+      >
         {t('Благодійність')}
       </NavItem>
-      <Language/>
+      <Language />
     </MobileNavList>
   );
 };
@@ -45,26 +99,56 @@ export const Nav = () => {
 
   return (
     <NavList>
-      <NavItem to="#about" className="headerNavigationItem active" data-info="about" onClick={(e)=>handleChangeActiveClass(e)}>
+      <NavItem
+        to="#about"
+        className="headerNavigationItem active"
+        data-info="about"
+        onClick={e => handleChangeActiveClass(e)}
+      >
         {t('Про нас')}
       </NavItem>
-      <NavItem to="#practics" className="headerNavigationItem" data-info="practics" onClick={(e)=>handleChangeActiveClass(e)}>
+      <NavItem
+        to="#practices"
+        className="headerNavigationItem"
+        data-info="practics"
+        onClick={e => handleChangeActiveClass(e)}
+      >
         {t('Практики')}
       </NavItem>
-      <NavItem to="#team" className="headerNavigationItem" data-info="team" onClick={(e)=>handleChangeActiveClass(e)}>
+      <NavItem
+        to="#team"
+        className="headerNavigationItem"
+        data-info="team"
+        onClick={e => handleChangeActiveClass(e)}
+      >
         {t('Команда')}
       </NavItem>
-      <NavItem to="#advantages" className="headerNavigationItem" data-info="advantages" onClick={(e)=>handleChangeActiveClass(e)}>
+      <NavItem
+        to="#advantages"
+        className="headerNavigationItem"
+        data-info="advantages"
+        onClick={e => handleChangeActiveClass(e)}
+      >
         {t('Переваги')}
       </NavItem>
-      <NavItem to="#partners" className="headerNavigationItem" data-info="partners" onClick={(e)=>handleChangeActiveClass(e)}>
+      <NavItem
+        to="#partners"
+        className="headerNavigationItem"
+        data-info="partners"
+        onClick={e => handleChangeActiveClass(e)}
+      >
         {t('Партнери')}
       </NavItem>
-      <NavItem to="#charity" className="headerNavigationItem" data-info="charity" onClick={(e)=>handleChangeActiveClass(e)}>
+      <NavItem
+        to="#charity"
+        className="headerNavigationItem"
+        data-info="charity"
+        onClick={e => handleChangeActiveClass(e)}
+      >
         {t('Благодійність')}
       </NavItem>
       <Language />
-      </NavList>
+    </NavList>
   );
 };
 

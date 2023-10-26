@@ -37,11 +37,12 @@ const AdvantageItemContainer = styled.ul`
 `;
 const AdvantageItem = styled.li`
   max-width: 387px;
-   z-index: 10;
+  z-index: 10;
   overflow: hidden;
   /* background-color: ${theme.colors.white}; */
+  box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
-  max-height: 283px;
+    max-height: 283px;
   }
 `;
 const ItemContentContainer = styled.div`

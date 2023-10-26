@@ -14,10 +14,10 @@ const HeaderSectionWrap = styled.header`
   top: 0%;
   left: 50%;
   transform: translate(-50%, 0%);
-  z-index: 100;
+  z-index: 20;
   transition: background-color 0.3s ease-in-out;
   background-color: ${({ props }) =>
-    props === 'true' ? 'rgb(252, 249, 242)' : 'transparent'};
+    props === 'true' ? `${theme.colors.white}` : 'transparent'};
 `;
 
 const HeaderContainer = styled(Container)`
