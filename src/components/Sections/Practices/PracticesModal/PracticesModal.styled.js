@@ -33,7 +33,7 @@ export const Backdrop = styled.div`
   width: 100%;
   height: 100%;
 
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
 
   transition: ${theme.transition[0]};
   overflow-y: scroll;
@@ -52,8 +52,8 @@ export const Modal = styled.div`
   align-items: flex-start;
   gap: 20px;
 
-  width: 90%;
-  height: 90%;
+  /* width: 90%;
+  height: 90%; */
   max-width: calc(100vw - 40px);
   max-height: calc(100vh - 40px);
   padding: 30px;
@@ -99,9 +99,9 @@ export const List = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   gap: 14px;
-  padding: 20px 20px 20px 30px;
 
-  list-style-type: circle;
+  width: 100%;
+  padding: 20px 20px 20px 30px;
 
   border-radius: 4px;
   background: ${theme.colors.grey};
@@ -114,6 +114,8 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
+  position: relative;
+
   font-family: ${theme.fonts[1]};
   font-size: 14px;
   font-style: normal;
@@ -121,8 +123,17 @@ export const Item = styled.li`
   line-height: 28px; /* 175% */
   color: ${theme.colors.text};
 
-  &::marker {
-    color: ${theme.colors.granat};
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
     background-color: ${theme.colors.granat};
   }
 
