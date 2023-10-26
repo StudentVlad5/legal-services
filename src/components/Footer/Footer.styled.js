@@ -37,8 +37,20 @@ export const FooterContainer = styled(Container)`
 export const FooterLogoContainer = styled(LogoContainer)`
   width: 0;
   margin-bottom: 30px;
+  display: none;
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     margin-bottom: 0;
+    display: flex;
+  }
+`;
+
+export const FooterLogoContainer1 = styled(LogoContainer)`
+  width: 0;
+  margin-bottom: 30px;
+  display: flex;
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    margin-bottom: 0;
+    display: none;
   }
 `;
 
@@ -75,7 +87,7 @@ export const ContactList = styled.ul``;
 export const ContactListItem = styled.li`
   display: flex;
   align-items: center;
-  &:first-child{
+  &:first-child {
     margin-bottom: 12px;
   }
 `;
