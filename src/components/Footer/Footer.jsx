@@ -20,7 +20,7 @@ import {
 
 export const FooterComp = () => {
   return (
-    <Footer>
+    <Footer id='contact'>
       <FooterContainer>
         <FooterLogoContainer1>
           <IconLogoContainer>
