@@ -22,7 +22,6 @@ export const FooterComp = () => {
   return (
     <Footer>
       <FooterContainer>
-
         <FooterLogoContainer1>
           <IconLogoContainer>
             <IconLogo />
@@ -33,19 +32,24 @@ export const FooterComp = () => {
         <LocationList>
           <LocationListItem>
             <Map />
-            <LocationListItemText>01001 Україна, м. Київ</LocationListItemText>
+            <LocationListItemText>
+              01001 Україна, м. Київ
+              <br />
+              вул. Трьохсвятительска, 5/1а
+              <br />
+              офіс 307
+            </LocationListItemText>
           </LocationListItem>
 
-          <LocationListItem>
+          {/* <LocationListItem>
             <LocationListItemText>
               вул. Трьохсвятительска, 5/1а
             </LocationListItemText>
           </LocationListItem>
 
           <LocationListItem>
-            {' '}
             <LocationListItemText> офіс 307 </LocationListItemText>
-          </LocationListItem>
+          </LocationListItem> */}
         </LocationList>
 
         <FooterLogoContainer>

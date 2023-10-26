@@ -14,14 +14,17 @@ export const FooterContainer = styled(Container)`
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 0 0 60px 0;
+  padding: 60px 30px;
   width: 100%;
-  @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    padding: 0 0 80px 0;
-  }
 
-  @media screen and (min-width: ${theme.breakpoints.desktop}) {
-    max-width: ${theme.breakpoints.desktop};
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 80px 70px;
+
+    /* max-width: ${theme.breakpoints.tablet}; */
   }
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
@@ -48,6 +51,7 @@ export const FooterLogoContainer1 = styled(LogoContainer)`
   width: 0;
   margin-bottom: 30px;
   display: flex;
+  justify-content: center;
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     margin-bottom: 0;
     display: none;
@@ -56,20 +60,21 @@ export const FooterLogoContainer1 = styled(LogoContainer)`
 
 export const LocationList = styled.ul`
   margin-bottom: 30px;
-  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
     margin-bottom: 0;
   }
 `;
 
 export const LocationListItem = styled.li`
-  margin-bottom: 12px;
-  &:first-child {
+  display: flex;
+  /* &:first-child {
+
     display: flex;
     align-items: center;
   }
   &:last-child {
     margin-bottom: 0;
-  }
+  } */
 `;
 
 export const LocationListItemText = styled.p`
