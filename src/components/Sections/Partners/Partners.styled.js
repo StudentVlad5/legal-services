@@ -47,7 +47,8 @@ const PartnerItem = styled.li`
   overflow: hidden;
   /* background-color: ${theme.colors.white}; */
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
-  max-height: 283px;}
+    max-height: 283px;
+  }
 `;
 const PartnerImg = styled.img`
   width: 200px;
@@ -64,7 +65,7 @@ const ItemContentContainer = styled.div`
   padding: 28px;
   background-color: ${theme.colors.grey};
   border-radius: 4px;
-  box-shadow: 0px 8px 50px 0px rgba(25, 35, 44, 0.1);
+  box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
 `;
 const ItemContentTitle = styled.p`
   color: ${theme.colors.granat};

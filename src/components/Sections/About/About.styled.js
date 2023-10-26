@@ -25,6 +25,7 @@ export const AboutContainer = styled(Container)`
   padding: 28px;
 
   background: ${theme.colors.grey};
+  box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
 
   @media screen and (min-width: ${theme.breakpoints.mobile}) {
     width: calc(100vw - 60px);
