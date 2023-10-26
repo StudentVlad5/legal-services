@@ -2,7 +2,6 @@ import { Logo } from 'components/Header/Elements/logo/Logo';
 import {
   IconLogo,
   IconLogoContainer,
-  LogoContainer,
 } from 'components/Header/Header.styled';
 import React from 'react';
 import {
