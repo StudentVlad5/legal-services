@@ -1,9 +1,5 @@
 import { Logo } from 'components/Header/Elements/logo/Logo';
-import {
-  IconLogo,
-  IconLogoContainer,
-  LogoContainer,
-} from 'components/Header/Header.styled';
+import { IconLogo, IconLogoContainer } from 'components/Header/Header.styled';
 import React from 'react';
 import {
   ContactList,
@@ -14,6 +10,7 @@ import {
   Footer,
   FooterContainer,
   FooterLogoContainer,
+  FooterLogoContainer1,
   LocationList,
   LocationListItem,
   LocationListItemText,
@@ -25,13 +22,18 @@ export const FooterComp = () => {
   return (
     <Footer>
       <FooterContainer>
+
+        <FooterLogoContainer1>
+          <IconLogoContainer>
+            <IconLogo />
+          </IconLogoContainer>
+          <Logo />
+        </FooterLogoContainer1>
+
         <LocationList>
           <LocationListItem>
             <Map />
-            <LocationListItemText>
-          
-              01001 Україна, м. Київ
-            </LocationListItemText>
+            <LocationListItemText>01001 Україна, м. Київ</LocationListItemText>
           </LocationListItem>
 
           <LocationListItem>
@@ -40,7 +42,10 @@ export const FooterComp = () => {
             </LocationListItemText>
           </LocationListItem>
 
-          <LocationListItem> <LocationListItemText> офіс 307 </LocationListItemText></LocationListItem>
+          <LocationListItem>
+            {' '}
+            <LocationListItemText> офіс 307 </LocationListItemText>
+          </LocationListItem>
         </LocationList>
 
         <FooterLogoContainer>
