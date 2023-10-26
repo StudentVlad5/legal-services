@@ -9,7 +9,7 @@ import styled from 'styled-components';
 export const TeamsSection = styled(Section)`
   position: relative;
   margin-bottom: 120px;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -40,6 +40,7 @@ export const TeamsList = styled.ul`
   width: 100%;
   padding: 20px 60px;
   margin-top: 36px;
+  gap: 24px 45px;
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     display: flex;
@@ -52,30 +53,10 @@ export const TeamsList = styled.ul`
 
 export const TeamsListItem = styled.li`
   position: relative;
-
-  &:not(:first-child) {
-    margin-top: 30px;
-  }
+  box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     width: 463px;
-
-    &:nth-child(1) {
-      margin-right: 45px;
-      margin-top: 0;
-    }
-
-    &:nth-child(2) {
-      margin-top: 0;
-    }
-    &:nth-child(3) {
-      margin-top: 24px;
-      margin-right: 45px;
-    }
-
-    &:nth-child(4) {
-      margin-top: 24px;
-    }
   }
 
   &::before {
