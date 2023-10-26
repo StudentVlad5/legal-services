@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/legal-services/static/css/main.7cda0caf.css",
-    "main.js": "/legal-services/static/js/main.49670f76.js",
+    "main.js": "/legal-services/static/js/main.99b3f99f.js",
     "static/media/about_desk@2x.png": "/legal-services/static/media/about_desk@2x.40846a1ebcd888b46074.png",
     "static/media/about_tab@2x.png": "/legal-services/static/media/about_tab@2x.990d0f48bcf7a4baf7b9.png",
     "static/media/about_mob@2x.png": "/legal-services/static/media/about_mob@2x.697e752e1e6928f70d3d.png",
@@ -32,6 +32,7 @@
     "static/media/mother_desk_2x_png.webp": "/legal-services/static/media/mother_desk_2x_png.62edb87e33a8d32b2a09.webp",
     "static/media/mother_desk_1x_png.webp": "/legal-services/static/media/mother_desk_1x_png.a28adb9d8273ed0a9dd0.webp",
     "static/media/hero-tab.webp": "/legal-services/static/media/hero-tab.9652a337d1d6d8ab215c.webp",
+    "static/media/lines.png": "/legal-services/static/media/lines.bf0897c867bf98a776c3.png",
     "static/media/ptz.webp": "/legal-services/static/media/ptz.c2c0e77fdf8b73d23412.webp",
     "static/media/hero-mob.webp": "/legal-services/static/media/hero-mob.57cd92aec290ef51304e.webp",
     "static/media/mother_tab_2x_png.webp": "/legal-services/static/media/mother_tab_2x_png.e92b2739d520c13f31bb.webp",
@@ -42,16 +43,18 @@
     "static/media/zbk1.webp": "/legal-services/static/media/zbk1.16bfe16579a561c0e748.webp",
     "static/media/svit_it.webp": "/legal-services/static/media/svit_it.6a82bd0e5eb0b31a5c85.webp",
     "static/media/extrime.webp": "/legal-services/static/media/extrime.78b5341308cf6db0aa51.webp",
+    "static/media/streamline_legal.svg": "/legal-services/static/media/streamline_legal.ba52847a1ba70fa383cc387441136f68.svg",
     "static/media/petrus.webp": "/legal-services/static/media/petrus.5c6575f1632b90a22273.webp",
     "static/media/big_vector.svg": "/legal-services/static/media/big_vector.22e59189bd6e586dbacce83dd68d243b.svg",
     "static/media/small_vector.svg": "/legal-services/static/media/small_vector.570d804afaecfc472a22ba2f825a287d.svg",
+    "static/media/arrow.svg": "/legal-services/static/media/arrow.bc1523e93cea342154cf791f619b131a.svg",
     "static/media/icon_close.svg": "/legal-services/static/media/icon_close.260c96aba626d6a8d203d583f1cf31cb.svg",
     "static/media/icon_menu.svg": "/legal-services/static/media/icon_menu.4287e90eebb410a64c7d6402780b62c7.svg",
     "main.7cda0caf.css.map": "/legal-services/static/css/main.7cda0caf.css.map",
-    "main.49670f76.js.map": "/legal-services/static/js/main.49670f76.js.map"
+    "main.99b3f99f.js.map": "/legal-services/static/js/main.99b3f99f.js.map"
   },
   "entrypoints": [
     "static/css/main.7cda0caf.css",
-    "static/js/main.49670f76.js"
+    "static/js/main.99b3f99f.js"
   ]
 }
