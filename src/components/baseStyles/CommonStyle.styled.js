@@ -71,8 +71,6 @@ const TitleGroup = styled.div`
 `;
 
 const SectionTitle = styled.h2`
-  display: inline-block;
-
   font-family: ${theme.fonts[2]};
   font-size: 24px;
   font-style: normal;
