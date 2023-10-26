@@ -10,6 +10,7 @@ import {
   TeamsSubtitle,
 } from './Teams.styled';
 
+
 export const Teams = () => {
   return (
     <TeamsSection>
