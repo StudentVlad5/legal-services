@@ -41,13 +41,14 @@ export const PracticesItem = styled.li`
 
   border-radius: 4px;
   background: ${theme.colors.grey};
+  box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     width: 285px;
     height: 264px;
   }
 
-  & svg {
+  & > svg {
     margin-bottom: 24px;
     fill: ${theme.colors.granat};
 
@@ -63,7 +64,7 @@ export const PracticesItem = styled.li`
   &:nth-child(2n) {
     background: ${theme.colors.granat};
 
-    & svg {
+    & > svg {
       fill: ${theme.colors.white};
       & path {
         stroke: ${theme.colors.white};
@@ -146,7 +147,9 @@ export const PracticeBtn = styled.button`
     font-size: 14px;
   }
 
-  & svg {
-    margin-bottom: 0;
+  & svg,
+  path {
+    fill: currentColor;
+    stroke: currentColor;
   }
 `;

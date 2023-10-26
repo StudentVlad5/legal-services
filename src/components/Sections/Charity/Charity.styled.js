@@ -7,17 +7,7 @@ import {
   TitleGroup,
 } from 'components/baseStyles/CommonStyle.styled';
 
-export const CharitySection = styled(Section)`
-  margin-top: -50px;
-
-  @media screen and (min-width: ${theme.breakpoints.desktop}) {
-    margin-top: -70px;
-  }
-
-  @media screen and (min-width: ${theme.breakpoints.desktop}) {
-    margin-top: -100px;
-  }
-`;
+export const CharitySection = styled(Section)``;
 
 export const CharityContainer = styled(Container)`
   width: calc(100vw - 20px);
@@ -25,6 +15,7 @@ export const CharityContainer = styled(Container)`
   padding: 28px;
 
   background: ${theme.colors.grey};
+  box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
 
   @media screen and (min-width: ${theme.breakpoints.mobile}) {
     width: calc(100vw - 60px);

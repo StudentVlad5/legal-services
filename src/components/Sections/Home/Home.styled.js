@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { theme } from 'components/baseStyles/Variables.styled';
-import { Section } from 'components/baseStyles/CommonStyle.styled';
+import { LinkBtn, Section } from 'components/baseStyles/CommonStyle.styled';
 
 import hero_mob_jpg from 'images/hero/hero-mob.jpg';
 import hero_mob_2x_jpg from 'images/hero/hero-mob@2x.jpg';
@@ -196,33 +196,14 @@ export const UpperTitle = styled.p`
   }
 `;
 
-export const Connect = styled.a`
+export const Connect = styled(LinkBtn)`
   margin-top: 11px;
-  padding: 13px;
-
-  font-family: ${theme.fonts[1]};
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   color: ${theme.colors.white};
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-
-  border-radius: 4px;
   border: 1px solid ${theme.colors.white};
-  cursor: pointer;
 
-  @media screen and (min-width: ${theme.breakpoints.mobile}) {
-    padding: 13px 26px;
-  }
-
-  @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    font-size: 14px;
-  }
-
-  @media screen and (min-width: ${theme.breakpoints.desktop}) {
-    font-size: 16px;
+  &:hover,
+  &:focus {
+    color: ${theme.colors.granat};
+    background-color: ${theme.colors.white};
   }
 `;

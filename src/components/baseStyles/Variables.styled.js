@@ -2,7 +2,7 @@ export const theme = {
   colors: {
     white: '#FFFFFF',
     black: '#000000',
-    blackOpacity: 'rgba(0, 0, 0, 0.9)',
+    blackOpacity: 'rgba(0, 0, 0, 0.1)',
     text: '#564040',
     grey: '#FFFBF4',
     red_grey: '#3F3737',

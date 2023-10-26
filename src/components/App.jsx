@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 import { HeaderComp } from './Header/Header';
 import { Home } from './Sections/Home/Home';
 import { About } from './Sections/About/About';
@@ -11,7 +12,7 @@ import { FooterComp } from './Footer/Footer';
 
 export const App = () => {
   return (
-    <>
+    <HelmetProvider>
       <HeaderComp />
       <Suspense fallback={'Loading...'}>
         <main>
@@ -25,6 +26,6 @@ export const App = () => {
         </main>
       </Suspense>
       <FooterComp />
-    </>
+    </HelmetProvider>
   );
 };

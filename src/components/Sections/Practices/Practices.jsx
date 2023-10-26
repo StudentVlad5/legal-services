@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { PracticesModal } from './PracticesModal/PracticesModal';
 import { Container, Section } from 'components/baseStyles/CommonStyle.styled';
 import {
   PracticeDesc,
@@ -35,62 +37,43 @@ export const Practices = () => {
     },
   ];
 
-  const practicesDescription = [
-    {
-      title: 'Корпоративне право',
-      list: [
-        'Правова допомога в корпоративних правовідносинах.',
-        'Створення, ліквідація та перетворення підприємств будь-якої організаційно-правової форми.',
-        'Підготовка та проведення зборів учасників/акціонерів.',
-        'Створення корпоративних структур із підприємств для реалізації бізнес цілей.',
-        'Надання консультацій з ведення зовнішньоекономічної діяльності.',
-        'Юридична експертиза зовнішньоекономічних контрактів.',
-      ],
-    },
-    {
-      title: 'Податкове право',
-      list: [
-        'Представлення інтересів перед органами Державної фіскальної служби України, в тому числі їх слідчими та оперативним підрозділами. ',
-        'Підготовка відповідей на запити податкових органів, оскарження результатів перевірок та податкових повідомлень-рішень, а також інших рішень податкових органів. ',
-        'Захист інтересів в спорах із податковими органами щодо фіктивності господарських відносин та ознак фіктивності компаній – контрагентів.',
-        'Правовий аналіз результатів податкових перевірок, оскарження в адміністративному та судовому порядку.',
-      ],
-    },
-    {
-      title: 'Судова практика',
-      list: [
-        'Представництво в судах всіх рівнів та юрисдикцій (загальні, господарські, адміністративні).',
-        'Стягнення дебіторської заборгованості в судовому порядку.',
-      ],
-    },
-    {
-      title: 'Кримінальне право',
-      list: [
-        'Правова допомога адвоката під час досудового слідства, під час взяття під варту та під час будь якої слідчої дії органів досудового слідства.',
-        'Правова допомога адвоката під час відбування покарання, звільнення від відбування покарання та зміни умов утримання під вартою.',
-      ],
-    },
-  ];
+  const [showModal, setShowModal] = useState(false);
+  const [idModal, setIdModal] = useState(null);
+  const toggleModal = () => {
+    showModal && document.querySelector('#modal').classList.add('animated');
+    setShowModal(state => !state);
+  };
 
   return (
-    <Section>
-      <Container>
-        <PracticesSectionTitle>Практики</PracticesSectionTitle>
-        <PracticesList>
-          {practices.map((practice, i) => (
-            <PracticesItem key={i}>
-              <Hammer size={24} />
-              <div>
-                <PracticeTitle>{practice.title}</PracticeTitle>
-                <PracticeDesc>{practice.description}</PracticeDesc>
-              </div>
-              <PracticeBtn type="button" aria-label="Подробиці">
-                <span>Подробиці</span> <Arrow size={10} />
-              </PracticeBtn>
-            </PracticesItem>
-          ))}
-        </PracticesList>
-      </Container>
-    </Section>
+    <>
+      <Section id="practices">
+        <Container>
+          <PracticesSectionTitle>Практики</PracticesSectionTitle>
+          <PracticesList>
+            {practices.map((practice, i) => (
+              <PracticesItem key={i}>
+                <Hammer size={24} />
+                <div>
+                  <PracticeTitle>{practice.title}</PracticeTitle>
+                  <PracticeDesc>{practice.description}</PracticeDesc>
+                </div>
+                <PracticeBtn
+                  type="button"
+                  aria-label="Подробиці"
+                  onClick={e => {
+                    toggleModal();
+                    setIdModal(e.currentTarget.dataset.id);
+                  }}
+                  data-id={practice.title}
+                >
+                  <span>Подробиці</span> <Arrow size={10} />
+                </PracticeBtn>
+              </PracticesItem>
+            ))}
+          </PracticesList>
+        </Container>
+      </Section>
+      {showModal && <PracticesModal onClose={toggleModal} title={idModal} />}
+    </>
   );
 };
