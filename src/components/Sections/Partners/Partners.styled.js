@@ -49,14 +49,15 @@ const PartnerItemContainer = styled.ul`
 `;
 
 const PartnerItem = styled.li`
-  max-width: 300px;
   z-index: 10;
-
   align-items: stretch;
   align-content: stretch;
-
   padding: 4px;
   overflow: hidden;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    max-width: 300px;
+  }
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     max-width: 350px;
