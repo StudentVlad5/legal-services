@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/legal-services/static/css/main.7cda0caf.css",
-    "main.js": "/legal-services/static/js/main.17fa2de7.js",
+    "main.js": "/legal-services/static/js/main.1bb92a9b.js",
     "static/media/about_desk@2x.png": "/legal-services/static/media/about_desk@2x.40846a1ebcd888b46074.png",
     "static/media/about_tab@2x.png": "/legal-services/static/media/about_tab@2x.990d0f48bcf7a4baf7b9.png",
     "static/media/about_mob@2x.png": "/legal-services/static/media/about_mob@2x.697e752e1e6928f70d3d.png",
@@ -45,19 +45,17 @@
     "static/media/extrime.webp": "/legal-services/static/media/extrime.78b5341308cf6db0aa51.webp",
     "static/media/streamline_legal.svg": "/legal-services/static/media/streamline_legal.ba52847a1ba70fa383cc387441136f68.svg",
     "static/media/petrus.webp": "/legal-services/static/media/petrus.5c6575f1632b90a22273.webp",
-    "static/media/big_vector.svg": "/legal-services/static/media/big_vector.22e59189bd6e586dbacce83dd68d243b.svg",
-    "static/media/small_vector.svg": "/legal-services/static/media/small_vector.570d804afaecfc472a22ba2f825a287d.svg",
+    "static/media/phone.svg": "/legal-services/static/media/phone.df3ab67591ba7dc050f96ea4dee9336c.svg",
+    "static/media/email.svg": "/legal-services/static/media/email.023a25c922753cd0d5422ab6eca95fa2.svg",
+    "static/media/bxs_map.svg": "/legal-services/static/media/bxs_map.dd029741a6b8380cf342575162a263a2.svg",
     "static/media/arrow.svg": "/legal-services/static/media/arrow.bc1523e93cea342154cf791f619b131a.svg",
-    "static/media/phone.svg": "/legal-services/static/media/phone.e82acab33120e2e9201154257181b5c9.svg",
-    "static/media/bxs_map.svg": "/legal-services/static/media/bxs_map.74a2c5c38635fedc775781f2515b50ba.svg",
-    "static/media/email.svg": "/legal-services/static/media/email.aca6e0efe1d95803e4a30c9bd9cf9640.svg",
     "static/media/icon_close.svg": "/legal-services/static/media/icon_close.260c96aba626d6a8d203d583f1cf31cb.svg",
     "static/media/icon_menu.svg": "/legal-services/static/media/icon_menu.4287e90eebb410a64c7d6402780b62c7.svg",
     "main.7cda0caf.css.map": "/legal-services/static/css/main.7cda0caf.css.map",
-    "main.17fa2de7.js.map": "/legal-services/static/js/main.17fa2de7.js.map"
+    "main.1bb92a9b.js.map": "/legal-services/static/js/main.1bb92a9b.js.map"
   },
   "entrypoints": [
     "static/css/main.7cda0caf.css",
-    "static/js/main.17fa2de7.js"
+    "static/js/main.1bb92a9b.js"
   ]
 }
