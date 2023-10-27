@@ -1,5 +1,5 @@
+import { LinkBtn } from 'components/baseStyles/CommonStyle.styled';
 import { theme } from 'components/baseStyles/Variables.styled';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
@@ -28,15 +28,15 @@ const NavList = styled(MobileNavList)`
   white-space: nowrap;
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     display: flex;
+    width: 100%;
     flex-direction: row;
-    justify-content: start;
     gap: 24px;
     margin: 0px;
     /* width: 100%; */
   }
 `;
 
-const NavItem = styled(Link)`
+const NavItem = styled.a`
   cursor: pointer;
   font-family: ${theme.fonts[1]};
   font-size: ${theme.fontSizes.small_medium};
@@ -74,5 +74,29 @@ const NavItem = styled(Link)`
     }
   }
 `;
+const Connect = styled(LinkBtn)`
+  margin-top: 11px;
+  padding: 8px;
+  color: ${theme.colors.granat};
+  border: 1px solid ${theme.colors.granat};
+  cursor: pointer;
+  font-family: ${theme.fonts[1]};
+  font-size: ${theme.fontSizes.small};
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  white-space: nowrap;
 
-export { MobileNavList, NavList, NavItem };
+  &:hover,
+  &:focus {
+    color: ${theme.colors.white};
+    background-color: ${theme.colors.text};
+    border: 1px solid ${theme.colors.white};
+  }
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+      margin-top: 0px;
+      margin-left: 0px;
+
+  }
+`;
+export { MobileNavList, NavList, NavItem, Connect };

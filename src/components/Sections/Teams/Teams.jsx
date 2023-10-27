@@ -12,7 +12,7 @@ import {
 
 export const Teams = () => {
   return (
-    <TeamsSection id='teams'>
+    <TeamsSection id='team'>
       <TeamContainer>
         <SectionTitle>команда</SectionTitle>
         <TeamsSubtitle>Досвідчених професіоналів</TeamsSubtitle>

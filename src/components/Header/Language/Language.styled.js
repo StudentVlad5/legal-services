@@ -5,13 +5,13 @@ export const SelectContainerLanguage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
   position: relative;
   height: auto;
   background-color: transparent;
+  margin-top: 60px;
   cursor: pointer;
 
-  @media screen and (max-width: ${theme.breakpoints.mobile_max}) {
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
     margin-top: 0;
   }
 `;
@@ -19,7 +19,7 @@ export const SelectContainerLanguage = styled.div`
 export const LabelLanguage = styled.span`
   cursor: pointer;
   font-family: ${theme.fonts[1]};
-  font-size: ${theme.fontSizes.small_medium};
+  font-size: ${theme.fontSizes.small};
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
@@ -29,8 +29,8 @@ export const LabelLanguage = styled.span`
   margin: 2px;
   transition: ${theme.transition[0]};
   &:first-child {
-  margin-left: 5px;
-  };
+    margin-left: 5px;
+  }
   &:focus,
   &:hover {
     color: ${theme.colors.granat};

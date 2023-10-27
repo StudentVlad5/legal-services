@@ -7,7 +7,20 @@ import {
   TitleGroup,
 } from 'components/baseStyles/CommonStyle.styled';
 
-export const CharitySection = styled(Section)``;
+export const CharitySection = styled(Section)`
+  position: relative;
+  margin-bottom: 120px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: ${theme.colors.back_green};
+    z-index: -1;
+  }`;
 
 export const CharityContainer = styled(Container)`
   width: calc(100vw - 20px);

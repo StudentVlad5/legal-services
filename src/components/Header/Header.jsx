@@ -6,7 +6,6 @@ import {
   HeaderContainer,
   HeaderSectionWrap,
   IconLogo,
-  IconLogoContainer,
   LogoContainer,
 } from './Header.styled';
 
@@ -33,10 +32,8 @@ export const HeaderComp = () => {
     <HeaderSectionWrap props={isscrolled}>
       <HeaderContainer>
         <LogoContainer>
-          <IconLogoContainer>
             <IconLogo />
-          </IconLogoContainer>
-          <Logo />
+            <Logo />
         </LogoContainer>
         <Menu />
         <Navigation />

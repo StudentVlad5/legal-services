@@ -14,7 +14,7 @@ const HeaderSectionWrap = styled.header`
   top: 0%;
   left: 50%;
   transform: translate(-50%, 0%);
-  z-index: 20;
+  z-index: 40;
   transition: background-color 0.3s ease-in-out;
   background-color: ${({ props }) =>
     props === 'true' ? `${theme.colors.white}` : 'transparent'};
@@ -37,19 +37,20 @@ const LogoContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  max-width: 230px;
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
   min-width: 330px;
+  }
 `;
 
 const IconLogo = styled(Icon_Logo)`
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
   width: 46px;
   height: 46px;
-`;
-
-const IconLogoContainer = styled.div`
-  width: 46px;
-  height: 46px;
-  margin: 4px;
-  border-radius: 50%;
+  }
 `;
 
 export {
@@ -57,5 +58,4 @@ export {
   HeaderSectionWrap,
   LogoContainer,
   IconLogo,
-  IconLogoContainer,
 };
