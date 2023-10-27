@@ -26,11 +26,12 @@ const SubText = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 3.87px;
+
   text-transform: lowercase;
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     font-size: ${theme.fontSizes.medium};
+    letter-spacing: 3.87px;
   }
 `;
 

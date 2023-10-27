@@ -142,6 +142,7 @@ export const PracticeBtn = styled.button`
 
   border: none;
   background: transparent;
+  cursor: pointer;
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     font-size: 14px;

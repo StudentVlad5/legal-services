@@ -2,12 +2,14 @@ import { theme } from 'components/baseStyles/Variables.styled';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  position: relative;
+  display: none;
+
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
     /* margin-left: 94px; */
   }
 `;

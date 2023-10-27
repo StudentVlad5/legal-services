@@ -10,16 +10,13 @@ import {
   ItemContentContainer,
   ItemContentTitle,
   ItemContent,
-  BackgroundSvgVectorContainer,
-  BackgroundSvgVector,
 } from './Partners.styled';
 import img1 from 'images/partners/zbk1.webp';
 import img2 from 'images/partners/petrus.webp';
 import img3 from 'images/partners/svit_it.webp';
 import img4 from 'images/partners/ptz.webp';
 import img5 from 'images/partners/extrime.webp';
-import { ReactComponent as BigVector } from 'images/svg/big_vector.svg';
-import { ReactComponent as SmallVector } from 'images/svg/small_vector.svg';
+
 
 const data = [
   {
@@ -74,15 +71,6 @@ export const Partners = () => {
           ))}
         </PartnerItemContainer>
       </PartnerContainer>
-      <BackgroundSvgVectorContainer>
-        <BackgroundSvgVector />
-        <BackgroundSvgVector>
-          <BigVector />
-        </BackgroundSvgVector>
-        <BackgroundSvgVector style={{ marginTop: '80px' }}>
-          <SmallVector />
-        </BackgroundSvgVector>
-      </BackgroundSvgVectorContainer>
     </PartnerSection>
   );
 };

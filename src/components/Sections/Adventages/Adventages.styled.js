@@ -1,10 +1,12 @@
-import styled from 'styled-components';
-import { theme } from 'components/baseStyles/Variables.styled';
+import styled from "styled-components";
+import { theme } from "components/baseStyles/Variables.styled";
 import {
   Container,
   Section,
   SectionTitle,
-} from 'components/baseStyles/CommonStyle.styled';
+} from "components/baseStyles/CommonStyle.styled";
+import linesBig from "images/svg/big_vector.svg";
+import linesSmal from "images/svg/small_vector.svg";
 
 const AdvantageSection = styled(Section)`
   position: relative;
@@ -24,34 +26,46 @@ const AdvantageSectionTitle = styled(SectionTitle)`
   margin-bottom: 60px;
 `;
 const AdvantageItemContainer = styled.ul`
-  display: grid;
-  row-gap: 20px;
-  column-gap: 32px;
-  grid-template-columns: 1fr;
-  @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    grid-template-columns: 1fr 1fr;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 32px;
+  column-gap: 20px;
+  justify-content: center;
+
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
-    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url(${linesBig}), url(${linesSmal});
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 15%, 50% 85%;
+    background-size: contain, 80%;
   }
 `;
-const AdvantageItem = styled.li`
-  max-width: 387px;
-  z-index: 10;
+const AdvantageItem = styled.div`
+  width: 100%;
+  height: 80%;
+`;
+const AdvantageItemWrap = styled.li`
+  max-width: 300px;
+  z-index: 20;
   overflow: hidden;
-  /* background-color: ${theme.colors.white}; */
-  box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
+  align-items: stretch;
+  align-content: stretch;
+  padding: 4px;
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    max-height: 283px;
+    max-width: 350px;
+  }
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    max-width: 350px;
   }
 `;
 const ItemContentContainer = styled.div`
   display: inline-block;
+  width: 100%;
   height: 100%;
   padding: 28px;
   background-color: ${theme.colors.grey};
   border-radius: 4px;
-  box-shadow: 0px 8px 50px 0px rgba(25, 35, 44, 0.1);
+  box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
 `;
 const ItemContentTitle = styled.p`
   color: ${theme.colors.granat};
@@ -60,6 +74,13 @@ const ItemContentTitle = styled.p`
   font-style: normal;
   font-weight: 300;
   line-height: 24px;
+  text-align: center;
+  min-height: 48px;
+  margin-bottom: 4px;
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    min-height: auto;
+    margin-bottom: 24px;
+  }
 `;
 const NumberOfItem = styled.div`
   display: flex;
@@ -80,20 +101,7 @@ const NumberOfItem = styled.div`
 `;
 const ItemContent = styled(ItemContentTitle)`
   color: ${theme.colors.text};
-`;
-const BackgroundSvgVectorContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-`;
-const BackgroundSvgVector = styled.div`
-  height: 25%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: start;
 `;
 
 export {
@@ -105,7 +113,6 @@ export {
   ItemContentContainer,
   ItemContentTitle,
   ItemContent,
-  BackgroundSvgVectorContainer,
-  BackgroundSvgVector,
   NumberOfItem,
+  AdvantageItemWrap,
 };

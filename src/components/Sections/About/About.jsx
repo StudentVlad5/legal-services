@@ -32,7 +32,7 @@ import about_desk_2x_webp from 'images/about/about_desk@2x.webp';
 
 export const About = () => {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <AboutContainer>
         <AboutTitleGroup $mobile>
           <SectionTitle>Про нас </SectionTitle>

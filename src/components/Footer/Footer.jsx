@@ -1,5 +1,5 @@
 import { Logo } from 'components/Header/Elements/logo/Logo';
-import { IconLogo, IconLogoContainer } from 'components/Header/Header.styled';
+import { IconLogo } from 'components/Header/Header.styled';
 import React from 'react';
 import {
   ContactList,
@@ -23,9 +23,9 @@ export const FooterComp = () => {
     <Footer id='contact'>
       <FooterContainer>
         <FooterLogoContainer1>
-          <IconLogoContainer>
+          {/* <IconLogoContainer> */}
             <IconLogo />
-          </IconLogoContainer>
+          {/* </IconLogoContainer> */}
           <Logo />
         </FooterLogoContainer1>
 
@@ -40,25 +40,11 @@ export const FooterComp = () => {
               офіс 307
             </LocationListItemText>
           </LocationListItem>
-
-          {/* <LocationListItem>
-            <LocationListItemText>
-              вул. Трьохсвятительска, 5/1а
-            </LocationListItemText>
-          </LocationListItem>
-
-          <LocationListItem>
-            <LocationListItemText> офіс 307 </LocationListItemText>
-          </LocationListItem> */}
-        </LocationList>
-
+       </LocationList>
         <FooterLogoContainer>
-          <IconLogoContainer>
             <IconLogo />
-          </IconLogoContainer>
           <Logo />
         </FooterLogoContainer>
-
         <ContactList>
           <ContactListItem>
             <Phone />

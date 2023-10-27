@@ -32,7 +32,7 @@ import mother_desk_2x_webp from 'images/charity/mother_desk_2x_png.webp';
 
 export const Charity = () => {
   return (
-    <CharitySection>
+    <CharitySection id="charity">
       <CharityContainer>
         <Box>
           <ImageBox>
