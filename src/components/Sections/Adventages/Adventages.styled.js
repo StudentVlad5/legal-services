@@ -62,9 +62,6 @@ const AdvantageItemWrap = styled.li`
   align-content: stretch;
   padding: 4px;
 
-  @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    max-width: 350px;
-  }
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     max-width: 350px;
   }
