@@ -2,7 +2,6 @@ import { LinkBtn } from 'components/baseStyles/CommonStyle.styled';
 import { theme } from 'components/baseStyles/Variables.styled';
 import styled from 'styled-components';
 
-
 const MobileNavList = styled.nav`
   display: flex;
   flex-direction: column;
@@ -75,11 +74,12 @@ const NavItem = styled.a`
   }
 `;
 const Connect = styled(LinkBtn)`
-  margin-top: 11px;
-  padding: 8px;
-  color: ${theme.colors.granat};
-  border: 1px solid ${theme.colors.granat};
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 40px;
+  padding: 13px;
+
   font-family: ${theme.fonts[1]};
   font-size: ${theme.fontSizes.small};
   font-style: normal;
@@ -87,16 +87,25 @@ const Connect = styled(LinkBtn)`
   line-height: 1.5;
   white-space: nowrap;
 
+  color: ${theme.colors.text};
+  border: 1px solid ${theme.colors.granat};
+  transition: ${theme.transition[0]};
+  cursor: pointer;
+
   &:hover,
   &:focus {
     color: ${theme.colors.white};
-    background-color: ${theme.colors.text};
-    border: 1px solid ${theme.colors.white};
-  }
-  @media screen and (min-width: ${theme.breakpoints.desktop}) {
-      margin-top: 0px;
-      margin-left: 0px;
+    background-color: ${theme.colors.granat};
+    border: 1px solid ${theme.colors.granat};
 
+    & > svg path {
+      fill: ${theme.colors.white};
+    }
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    margin-top: 0px;
+    margin-left: 0px;
   }
 `;
 export { MobileNavList, NavList, NavItem, Connect };

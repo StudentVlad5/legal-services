@@ -58,7 +58,6 @@ export const PracticesModal = ({ onClose, title }) => {
     const handleKeyDown = e => {
       if (e.code === 'Escape') {
         onClose();
-        document.querySelector('#modal').classList.add('animated');
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -71,11 +70,12 @@ export const PracticesModal = ({ onClose, title }) => {
 
   return (
     <Backdrop
+      id="modal"
       onClick={e => {
         if (e.currentTarget === e.target) onClose();
       }}
     >
-      <Modal id="modal">
+      <Modal>
         <CloseBtn
           size={18}
           aria-label="Close modal"

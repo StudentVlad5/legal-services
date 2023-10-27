@@ -14,7 +14,7 @@ const MobileHeader = styled.div`
     padding: 40px 45px 0px 45px;
   }
 
-  & a {
+  & div {
     margin: 0 auto;
   }
 `;

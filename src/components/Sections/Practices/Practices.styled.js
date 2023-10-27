@@ -22,14 +22,23 @@ export const PracticesList = styled.ul`
   justify-content: center;
   gap: 20px;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-image: url(${lines});
+  background-image: url(${lines}), url(${lines});
+  background-repeat: no-repeat, no-repeat;
+  background-position: 10% 10%, 90% 90%;
+  background-size: contain, contain;
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    gap: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(${lines});
   }
 `;
 

@@ -1,8 +1,14 @@
 import React from 'react';
-import { Text, SubText } from './Logo.styled';
+import { Text, SubText, LogoContainer, IconLogo } from './Logo.styled';
 
 export const Logo = () => {
-  return <Text to="/">«Колегія адвокатів «Гранат»
-  <SubText>адвокатське об’єднання</SubText>
-  </Text>;
+  return (
+    <LogoContainer>
+      <IconLogo />
+      <Text to="/">
+        «Колегія адвокатів «Гранат»
+        <SubText>адвокатське об’єднання</SubText>
+      </Text>
+    </LogoContainer>
+  );
 };

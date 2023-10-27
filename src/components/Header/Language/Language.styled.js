@@ -1,14 +1,17 @@
-import { theme } from "components/baseStyles/Variables.styled";
-import styled from "styled-components";
+import { theme } from 'components/baseStyles/Variables.styled';
+import styled from 'styled-components';
 
 export const SelectContainerLanguage = styled.div`
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+
   height: auto;
+  margin-top: 14px;
+
   background-color: transparent;
-  margin-top: 60px;
   cursor: pointer;
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
@@ -17,7 +20,8 @@ export const SelectContainerLanguage = styled.div`
 `;
 
 export const LabelLanguage = styled.span`
-  cursor: pointer;
+  margin: 2px;
+
   font-family: ${theme.fonts[1]};
   font-size: ${theme.fontSizes.small};
   font-style: normal;
@@ -26,11 +30,14 @@ export const LabelLanguage = styled.span`
   text-decoration: none;
   white-space: nowrap;
   color: ${theme.colors.text};
-  margin: 2px;
+
   transition: ${theme.transition[0]};
+  cursor: pointer;
+
   &:first-child {
     margin-left: 5px;
   }
+
   &:focus,
   &:hover {
     color: ${theme.colors.granat};

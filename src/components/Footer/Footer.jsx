@@ -1,6 +1,5 @@
-import { Logo } from 'components/Header/Elements/logo/Logo';
-import { IconLogo } from 'components/Header/Header.styled';
 import React from 'react';
+import { Logo } from 'components/Header/Elements/logo/Logo';
 import {
   ContactList,
   ContactListItem,
@@ -10,55 +9,62 @@ import {
   Footer,
   FooterContainer,
   FooterLogoContainer,
-  FooterLogoContainer1,
   LocationList,
   LocationListItem,
   LocationListItemText,
   Map,
   Phone,
+  Wrapper,
 } from './Footer.styled';
 
 export const FooterComp = () => {
   return (
-    <Footer id='contact'>
+    <Footer id="contact">
       <FooterContainer>
-        <FooterLogoContainer1>
-          {/* <IconLogoContainer> */}
-            <IconLogo />
-          {/* </IconLogoContainer> */}
-          <Logo />
-        </FooterLogoContainer1>
-
-        <LocationList>
-          <LocationListItem>
-            <Map />
-            <LocationListItemText>
-              01001 Україна, м. Київ
-              <br />
-              вул. Трьохсвятительска, 5/1а
-              <br />
-              офіс 307
-            </LocationListItemText>
-          </LocationListItem>
-       </LocationList>
-        <FooterLogoContainer>
-            <IconLogo />
+        <FooterLogoContainer $mobile>
           <Logo />
         </FooterLogoContainer>
-        <ContactList>
-          <ContactListItem>
-            <Phone />
-            <ContactListItemLink href="tel:+380506499166">
-              +380506499166
-            </ContactListItemLink>
-          </ContactListItem>
-          <ContactListItem>
-            <Email />
-            <ContactListItemLinkEmail href="mailto:advgarnet@gmail.com">
-              advgarnet@gmail.com
-            </ContactListItemLinkEmail>
-          </ContactListItem>
-        </ContactList>
+        <Wrapper>
+          <LocationList>
+            <LocationListItem>
+              <Map />
+              <LocationListItemText
+                href="https://maps.app.goo.gl/8QTj3SRQvAVsL3VL8"
+                aria-label="address"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                01001 Україна, м. Київ
+                <br />
+                вул. Трьохсвятительска, 5/1а
+                <br />
+                офіс 307
+              </LocationListItemText>
+            </LocationListItem>
+          </LocationList>
+
+          <FooterLogoContainer>
+            <Logo />
+          </FooterLogoContainer>
+
+          <ContactList>
+            <ContactListItem>
+              <Phone />
+              <ContactListItemLink href="tel:+380506499166" aria-label="phone">
+                +380506499166
+              </ContactListItemLink>
+            </ContactListItem>
+            <ContactListItem>
+              <Email />
+              <ContactListItemLinkEmail
+                href="mailto:advgarnet@gmail.com"
+                aria-label="email"
+              >
+                advgarnet@gmail.com
+              </ContactListItemLinkEmail>
+            </ContactListItem>
+          </ContactList>
+        </Wrapper>
       </FooterContainer>
     </Footer>
   );

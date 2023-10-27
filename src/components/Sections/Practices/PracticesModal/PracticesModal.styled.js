@@ -18,7 +18,25 @@ export const slitOutVertical = keyframes`
     -webkit-transform: translateZ(-800px) rotateY(90deg);
             transform: translateZ(-800px) rotateY(90deg);
     opacity: 0;
-  }`;
+  }
+`;
+
+export const slitInVertical = keyframes`
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+`;
 
 export const Backdrop = styled.div`
   position: fixed;
@@ -42,6 +60,7 @@ export const Backdrop = styled.div`
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    /* animation: ${slitOutVertical} 0.25s ease-in both; */
   }
 `;
 
@@ -52,8 +71,6 @@ export const Modal = styled.div`
   align-items: flex-start;
   gap: 20px;
 
-  /* width: 90%;
-  height: 90%; */
   max-width: calc(100vw - 40px);
   max-height: calc(100vh - 40px);
   padding: 30px;
@@ -62,6 +79,9 @@ export const Modal = styled.div`
   border: 1px solid ${theme.colors.blackOpacity};
   border-radius: 5px;
   box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
+
+  animation: ${slitInVertical} 0.25s ease-out both;
+  transition: ${theme.transition[0]};
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     max-width: calc(100vw - 100px);
@@ -76,10 +96,6 @@ export const Modal = styled.div`
     max-height: 1000px;
     padding: 80px 120px;
     gap: 48px;
-  }
-
-  &.animated {
-    animation: ${slitOutVertical} 0.5s ease-in both;
   }
 `;
 
@@ -123,6 +139,10 @@ export const Item = styled.li`
   line-height: 28px; /* 175% */
   color: ${theme.colors.text};
 
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    font-size: 16px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -135,10 +155,6 @@ export const Item = styled.li`
 
     border-radius: 50%;
     background-color: ${theme.colors.granat};
-  }
-
-  @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    font-size: 16px;
   }
 `;
 

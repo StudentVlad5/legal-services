@@ -1,5 +1,7 @@
 import {
   SectionTitle,
+  Subtitle,
+  TitleGroup,
 } from 'components/baseStyles/CommonStyle.styled';
 import {
   TeamContainer,
@@ -7,16 +9,16 @@ import {
   TeamsListItem,
   TeamsListItemText,
   TeamsSection,
-  TeamsSubtitle,
 } from './Teams.styled';
 
 export const Teams = () => {
   return (
     <TeamsSection id='team'>
       <TeamContainer>
-        <SectionTitle>команда</SectionTitle>
-        <TeamsSubtitle>Досвідчених професіоналів</TeamsSubtitle>
-
+        <TitleGroup $center>
+          <SectionTitle>команда</SectionTitle>
+          <Subtitle>Досвідчених професіоналів</Subtitle>
+        </TitleGroup>
         <TeamsList>
           <TeamsListItem>
             <TeamsListItemText>
