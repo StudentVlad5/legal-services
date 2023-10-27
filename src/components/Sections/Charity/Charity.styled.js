@@ -9,7 +9,6 @@ import {
 
 export const CharitySection = styled(Section)`
   position: relative;
-  margin-bottom: 120px;
 
   &::before {
     content: '';
@@ -20,7 +19,8 @@ export const CharitySection = styled(Section)`
     height: 50%;
     background-color: ${theme.colors.back_green};
     z-index: -1;
-  }`;
+  }
+`;
 
 export const CharityContainer = styled(Container)`
   width: calc(100vw - 20px);

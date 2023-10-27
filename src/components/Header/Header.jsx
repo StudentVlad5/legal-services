@@ -2,12 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Navigation } from 'components/Header/Navigation/Navigation';
 import { Logo } from './Elements/logo/Logo';
 import { Menu } from './Elements/menu/Menu';
-import {
-  HeaderContainer,
-  HeaderSectionWrap,
-  IconLogo,
-  LogoContainer,
-} from './Header.styled';
+import { HeaderContainer, HeaderSectionWrap } from './Header.styled';
 
 export const HeaderComp = () => {
   const [isscrolled, setIsScrolled] = useState('false');
@@ -31,10 +26,7 @@ export const HeaderComp = () => {
   return (
     <HeaderSectionWrap props={isscrolled}>
       <HeaderContainer>
-        <LogoContainer>
-            <IconLogo />
-            <Logo />
-        </LogoContainer>
+        <Logo />
         <Menu />
         <Navigation />
       </HeaderContainer>

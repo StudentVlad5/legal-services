@@ -17,7 +17,6 @@
     "react-helmet-async": "^1.3.0",
     "react-i18next": "^13.0.2",
     "react-icons": "^4.11.0",
-    "react-lazy-load-image-component": "^1.6.0",
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
     "styled-components": "^6.0.2",
@@ -54,7 +53,7 @@
     "type": "git",
     "url": "git+https://github.com/StudentVlad5/legal-services.git"
   },
-  "author": "Vlad",
+  "author": "Brand-maze",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/StudentVlad5/legal-services/issues"

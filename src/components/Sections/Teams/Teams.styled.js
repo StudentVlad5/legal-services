@@ -1,8 +1,4 @@
-import {
-  Container,
-  Section,
-  Subtitle,
-} from 'components/baseStyles/CommonStyle.styled';
+import { Container, Section } from 'components/baseStyles/CommonStyle.styled';
 import { theme } from 'components/baseStyles/Variables.styled';
 import styled from 'styled-components';
 
@@ -28,19 +24,17 @@ export const TeamContainer = styled(Container)`
   align-items: center;
 `;
 
-export const TeamsSubtitle = styled(Subtitle)`
-  margin-top: 12px;
-`;
-
 export const TeamsList = styled.ul`
   display: flex;
   flex-direction: column;
+  gap: 24px 45px;
 
-  background-color: ${theme.colors.grey};
   width: 100%;
   padding: 20px 60px;
   margin-top: 36px;
-  gap: 24px 45px;
+
+  background-color: ${theme.colors.grey};
+  box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     display: flex;
@@ -53,7 +47,6 @@ export const TeamsList = styled.ul`
 
 export const TeamsListItem = styled.li`
   position: relative;
-  box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     width: 463px;
@@ -62,8 +55,8 @@ export const TeamsListItem = styled.li`
   &::before {
     content: '';
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: ${theme.colors.granat};
     top: 10px;
     left: -20px;

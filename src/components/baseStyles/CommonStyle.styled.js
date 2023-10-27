@@ -58,7 +58,7 @@ const Title = styled.h1`
 const TitleGroup = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: ${props => (props.$center ? 'center' : 'flex-start')};
   gap: 10px;
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
@@ -134,7 +134,9 @@ const LinkBtn = styled.a`
 
   border-radius: 4px;
   border: 1px solid ${theme.colors.granat};
+
   cursor: pointer;
+  transition: ${theme.transition[0]};
 
   @media screen and (min-width: ${theme.breakpoints.mobile}) {
     padding: 13px 26px;

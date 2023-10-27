@@ -1,7 +1,5 @@
 import {
-  PartnerSectionTitle,
   PartnerContainer,
-  PartnerSubtitle,
   PartnerSection,
   PartnerItemContainer,
   PartnerItem,
@@ -10,6 +8,9 @@ import {
   ItemContentContainer,
   ItemContentTitle,
   ItemContent,
+  // BackgroundSvgVectorContainer,
+  // BackgroundSvgVector,
+  PartnerTitleGroup,
 } from './Partners.styled';
 import img1 from 'images/partners/zbk1.webp';
 import img2 from 'images/partners/petrus.webp';
@@ -17,6 +18,12 @@ import img3 from 'images/partners/svit_it.webp';
 import img4 from 'images/partners/ptz.webp';
 import img5 from 'images/partners/extrime.webp';
 
+// import { ReactComponent as BigVector } from 'images/svg/big_vector.svg';
+// import { ReactComponent as SmallVector } from 'images/svg/small_vector.svg';
+import {
+  SectionTitle,
+  Subtitle,
+} from 'components/baseStyles/CommonStyle.styled';
 
 const data = [
   {
@@ -55,8 +62,10 @@ export const Partners = () => {
   return (
     <PartnerSection id="partners">
       <PartnerContainer>
-        <PartnerSectionTitle>Наші партнери</PartnerSectionTitle>
-        <PartnerSubtitle>УКРАЇНСЬКІ КАМПАНІЇ</PartnerSubtitle>
+        <PartnerTitleGroup $center>
+          <SectionTitle>Наші партнери</SectionTitle>
+          <Subtitle>УКРАЇНСЬКІ КАМПАНІЇ</Subtitle>
+        </PartnerTitleGroup>
         <PartnerItemContainer>
           {data.map((it, ind) => (
             <PartnerItem key={ind}>
