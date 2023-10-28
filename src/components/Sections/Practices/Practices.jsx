@@ -12,28 +12,31 @@ import {
 
 import { ReactComponent as Hammer } from 'images/svg/streamline_legal.svg';
 import { ReactComponent as Arrow } from 'images/svg/arrow.svg';
+import { useTranslation } from 'react-i18next';
 
 export const Practices = () => {
+  const { t } = useTranslation();
+
   const practices = [
     {
-      title: 'Корпоративне право',
+      title: t('Корпоративне право'),
       description:
-        'Правова допомога при створенні, ліквідації та перетворенні підприємств будь-якої організаційно-правової форми.',
+        t('Правова допомога при створенні, ліквідації та перетворенні підприємств будь-якої організаційно-правової форми.'),
     },
     {
-      title: 'Податкове право',
+      title: t('Податкове право'),
       description:
-        'Оптимізація опадкування. Супровід замовников в процесі вирішення податкових спорів, в тому числі і в судах.',
+        t('Оптимізація оподаткування. Супровід замовников в процесі вирішення податкових спорів, в тому числі і в судах.',)
     },
     {
-      title: 'Кримінальне право',
+      title: t('Кримінальне право'),
       description:
-        'Правова допомога адвоката під час будь якої слідчої дії органів досудового слідства ті під час відбування покарання.',
+        t('Правова допомога адвоката під час будь якої слідчої дії органів досудового слідства ті під час відбування покарання.'),
     },
     {
-      title: 'Судова практика',
+      title: t('Судова практика'),
       description:
-        'Представництво в судах всіх рівнів та юрисдикцій (загальних, господарських, адміністративних)',
+        t('Представництво в судах всіх рівнів та юрисдикцій (загальних, господарських, адміністративних)'),
     },
   ];
 
@@ -48,7 +51,7 @@ export const Practices = () => {
     <>
       <Section id="practices">
         <Container>
-          <PracticesSectionTitle>Практики</PracticesSectionTitle>
+          <PracticesSectionTitle>{t("Практики")}</PracticesSectionTitle>
           <PracticesList>
             {practices.map((practice, i) => (
               <PracticesItem key={i}>
@@ -59,14 +62,14 @@ export const Practices = () => {
                 </div>
                 <PracticeBtn
                   type="button"
-                  aria-label="Подробиці"
+                  aria-label={t("Подробиці")}
                   onClick={e => {
                     toggleModal();
                     setIdModal(e.currentTarget.dataset.id);
                   }}
                   data-id={practice.title}
                 >
-                  <span>Подробиці</span> <Arrow size={10} />
+                  <span>{t("Подробиці")}</span> <Arrow size={10} />
                 </PracticeBtn>
               </PracticesItem>
             ))}
