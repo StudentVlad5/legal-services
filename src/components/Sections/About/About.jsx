@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import {
   SectionTitle,
   Subtitle,
@@ -29,7 +30,6 @@ import about_desk_png from 'images/about/about_desk.png';
 import about_desk_2x_png from 'images/about/about_desk@2x.png';
 import about_desk_webp from 'images/about/about_desk.webp';
 import about_desk_2x_webp from 'images/about/about_desk@2x.webp';
-import { useTranslation } from 'react-i18next';
 
 export const About = () => {
   const { t } = useTranslation();
@@ -99,8 +99,8 @@ export const About = () => {
             <AboutDescription>
               {t(
                 'Більшість нашіх адвокатів мають певну правову спеціалізацію, завдяки чому,'
-              )}
-              <span>Колегія адвокатів «Гранат» </span>
+              )}{' '}
+              <span>{t('Колегія адвокатів «Гранат»')}</span>{' '}
               {t(
                 'може запропонувати послуги в будь-якій галузі права та надати кваліфіковану допомогу з різних питань фізичним та юридичним особам.'
               )}

@@ -29,5 +29,5 @@ export const theme = {
     extraXXL: '36px',
   },
   transition: ['all 0.25s ease-in', 'all 150ms linear'],
-  scale: ['scale(1.15)'],
+  scale: ['scale(1.1)'],
 };
