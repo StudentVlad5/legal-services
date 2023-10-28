@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import {
   SectionTitle,
   Subtitle,
@@ -31,12 +32,14 @@ import about_desk_webp from 'images/about/about_desk.webp';
 import about_desk_2x_webp from 'images/about/about_desk@2x.webp';
 
 export const About = () => {
+  const { t } = useTranslation();
+
   return (
     <AboutSection id="about">
       <AboutContainer>
         <AboutTitleGroup $mobile>
-          <SectionTitle>Про нас </SectionTitle>
-          <Subtitle>Маєм доствід та репутацію</Subtitle>
+          <SectionTitle>{t('Про нас')} </SectionTitle>
+          <Subtitle>{t('Маєм доствід та репутацію')}</Subtitle>
         </AboutTitleGroup>
         <Box>
           <ImageBox>
@@ -70,33 +73,37 @@ export const About = () => {
           </ImageBox>
           <DescriptionGroup>
             <AboutTitleGroup>
-              <SectionTitle>Про нас </SectionTitle>
-              <Subtitle>Маєм доствід та репутацію</Subtitle>
+              <SectionTitle>{t('Про нас')} </SectionTitle>
+              <Subtitle>{t('Маєм доствід та репутацію')}</Subtitle>
             </AboutTitleGroup>
             <DescriptionHeading>
               <TextBox>
                 <MasterLetter>A</MasterLetter>
                 <AboutDescription>
-                  двокатське об’єднання «Колегія адвокатів «Гранат» було
-                  створено 09 березня 2011 року і об’єднує в собі адвокатів з
-                  великим досвідом практичної роботи.
+                  {t(
+                    'двокатське об’єднання «Колегія адвокатів «Гранат» було створено 09 березня 2011 року і об’єднує в собі адвокатів з великим досвідом практичної роботи.'
+                  )}
                 </AboutDescription>
               </TextBox>
               <AboutDescription>
-                Ми є неурядовою організацією, а об’єданням громадян за
-                професійною ознакою.
+                {t(
+                  'Ми є неурядовою організацією, а об’єданням громадян за професійною ознакою.'
+                )}
               </AboutDescription>
             </DescriptionHeading>
             <DescriptionItalic>
-              Основний напрямок діяльності це надання кваліфікованої правової
-              допомоги громадянам, організаціям та підприємствам
+              {t(
+                'Основний напрямок діяльності це надання кваліфікованої правової допомоги громадянам, організаціям та підприємствам'
+              )}
             </DescriptionItalic>
             <AboutDescription>
-              Більшість нашіх адвокатів мають певну правову спеціалізацію,
-              завдяки чому, <span>Колегія адвокатів «Гранат» </span>може
-              запропонувати послуги в будь-якій галузі права та надати
-              кваліфіковану допомогу з різних питань фізичним та юридичним
-              особам.
+              {t(
+                'Більшість нашіх адвокатів мають певну правову спеціалізацію, завдяки чому,'
+              )}{' '}
+              <span>{t('Колегія адвокатів «Гранат»')}</span>{' '}
+              {t(
+                'може запропонувати послуги в будь-якій галузі права та надати кваліфіковану допомогу з різних питань фізичним та юридичним особам.'
+              )}
             </AboutDescription>
           </DescriptionGroup>
         </Box>

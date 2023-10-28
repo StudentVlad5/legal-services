@@ -55,11 +55,13 @@ const AdvantageItem = styled.div`
 `;
 
 const AdvantageItemWrap = styled.li`
-  z-index: 10;
-  overflow: hidden;
+  display: flex;
   align-items: stretch;
-  align-content: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
   padding: 4px;
+  overflow: hidden;
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     max-width: 300px;

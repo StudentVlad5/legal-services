@@ -7,11 +7,11 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      ua: {
+      en: {
         translation: require('../src/translate/ua.json'),
       },
     },
-    fallbackLng: 'en',
+    fallbackLng: 'ua',
     debug: false,
   });
 

@@ -16,8 +16,11 @@ import {
   Phone,
   Wrapper,
 } from './Footer.styled';
+import { useTranslation } from 'react-i18next';
 
 export const FooterComp = () => {
+  const { t } = useTranslation();
+
   return (
     <Footer id="contact">
       <FooterContainer>
@@ -34,11 +37,11 @@ export const FooterComp = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                01001 Україна, м. Київ
+                {t('01001 Україна, м. Київ')}
                 <br />
-                вул. Трьохсвятительска, 5/1а
+                {t("вул. Трьохсвятительска, 5/1а")}
                 <br />
-                офіс 307
+                {t("офіс 307")}
               </LocationListItemText>
             </LocationListItem>
           </LocationList>

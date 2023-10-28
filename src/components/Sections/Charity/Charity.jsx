@@ -29,8 +29,11 @@ import mother_desk_png from 'images/charity/mother_desk_1x_png.png';
 import mother_desk_2x_png from 'images/charity/mother_desk_2x_png.png';
 import mother_desk_webp from 'images/charity/mother_desk_1x_png.webp';
 import mother_desk_2x_webp from 'images/charity/mother_desk_2x_png.webp';
+import { useTranslation } from 'react-i18next';
 
 export const Charity = () => {
+  const { t } = useTranslation();
+
   return (
     <CharitySection id="charity">
       <CharityContainer>
@@ -67,23 +70,23 @@ export const Charity = () => {
           <DescriptionGroup>
             <DescriptionHeading>
               <CharityTitleGroup $mobile>
-                <SectionTitle>БЛАГОДІЙНІСТЬ</SectionTitle>
-                <Subtitle>Маєм доствід та репутацію</Subtitle>
+                <SectionTitle>{t("Благодійність")}</SectionTitle>
+                <Subtitle>{t("Маємо досвід та репутацію")}</Subtitle>
               </CharityTitleGroup>
               <CharityTitleGroup>
-                <SectionTitle>БЛАГОДІЙНІСТЬ</SectionTitle>
-                <Subtitle>Маєм доствід та репутацію</Subtitle>
+                <SectionTitle>{t("Благодійність")}</SectionTitle>
+                <Subtitle>{t("Маємо досвід та репутацію")}</Subtitle>
               </CharityTitleGroup>
               <TextBox>
                 <MasterLetter>A</MasterLetter>
                 <CharityDescription>
-                  двокатське об’єднання «Колегія адвокатів «Гранат»
+                  {t("двокатське об’єднання «Колегія адвокатів «Гранат»")}
                 </CharityDescription>
               </TextBox>
-              <CharityDescription>Перший розділ</CharityDescription>
+              <CharityDescription>{t("Перший розділ")}</CharityDescription>
             </DescriptionHeading>
-            <DescriptionItalic>Основний напрямок</DescriptionItalic>
-            <CharityDescription>Другий розділ</CharityDescription>
+            <DescriptionItalic>{t("Основний напрямок")}</DescriptionItalic>
+            <CharityDescription>{t("Другий розділ")}</CharityDescription>
           </DescriptionGroup>
         </Box>
       </CharityContainer>
