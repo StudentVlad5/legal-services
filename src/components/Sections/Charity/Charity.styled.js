@@ -74,16 +74,14 @@ export const Box = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  gap: 12px;
+
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    flex-direction: row;
-    justify-content: start;
-    gap: 16px;
+    display: inline-block;
   }
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
-    gap: 20px;
+
   }
 `;
 
@@ -91,6 +89,8 @@ export const ImageBox = styled.div`
   position: relative;
   width: 215px;
   height: 205px;
+  float: right;    
+  margin: 5px;
   /* overflow: hidden; */
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
@@ -137,23 +137,6 @@ export const Gradient = styled.div`
   }
 `;
 
-export const DescriptionGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  gap: 14px;
-
-  @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    gap: 18px;
-    width: 50%;
-  }
-
-  @media screen and (min-width: ${theme.breakpoints.desktop}) {
-    gap: 25px;
-    width: 60%;
-  }
-`;
-
 export const DescriptionHeading = styled.div``;
 
 export const TextBox = styled.div`
@@ -197,6 +180,8 @@ export const CharityDescription = styled(Description)`
 export const DescriptionItalic = styled(Description)`
   position: relative;
   padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-style: italic;
 
   &::before {

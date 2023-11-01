@@ -6,7 +6,6 @@ import {
   CharityContainer,
   CharitySection,
   CharityTitleGroup,
-  DescriptionGroup,
   DescriptionHeading,
   TextBox,
   MasterLetter,
@@ -67,7 +66,6 @@ export const Charity = () => {
             </picture>
             <Gradient />
           </ImageBox>
-          <DescriptionGroup>
             <DescriptionHeading>
               <CharityTitleGroup $mobile>
                 <SectionTitle>{t("Благодійність")}</SectionTitle>
@@ -83,11 +81,20 @@ export const Charity = () => {
                   {t("двокатське об’єднання «Колегія адвокатів «Гранат»")}
                 </CharityDescription>
               </TextBox>
-              <CharityDescription>{t("Перший розділ")}</CharityDescription>
+              <CharityDescription>{t("Наше адвокатське об'єднання займається різними видами благодійної діяльності, спрямованої на підтримку різних груп людей або справ. Ось декілька  напрямків благодійної діяльності для адвокатського об'єднання:")}</CharityDescription>
             </DescriptionHeading>
-            <DescriptionItalic>{t("Основний напрямок")}</DescriptionItalic>
-            <CharityDescription>{t("Другий розділ")}</CharityDescription>
-          </DescriptionGroup>
+            <DescriptionItalic>{t("Правова допомога безкоштовно:")}</DescriptionItalic>
+            <CharityDescription>{t("Адвокати надають безкоштовну правову допомогу незаможним клієнтам, особам з обмеженими можливостями, жертвам насильства чи іншим потребуючим. Ця діяльність включає в себе консультації, підготовку документів і захист в суді.")}</CharityDescription>
+            <DescriptionItalic>{t("Освіта і навчання:")}</DescriptionItalic>
+            <CharityDescription>{t("Адвокатське об'єднання організовує семінари, лекції та інші освітні заходи, щоб підвищити правову грамотність громади і надати інформацію про їх права та обов'язки.")}</CharityDescription>
+            <DescriptionItalic>{t("Підтримка громадських організацій:")}</DescriptionItalic>
+            <CharityDescription>{t("Адвокати надає безкоштовну або знижену ціну правових послуг громадським організаціям, які працюють в сферах благодійності, захисту прав людини, екології тощо.")}</CharityDescription>
+            <DescriptionItalic>{t("Участь у правозахисних програмах:")}</DescriptionItalic>
+            <CharityDescription>{t("Адвокатське об'єднання бере участь у програмах правозахисту та захисту прав людини, включаючи захист прав меншин, біженців, іммігрантів та інших уразливих груп.")}</CharityDescription>
+            <DescriptionItalic>{t("Публікація інформаційних матеріалів:")}</DescriptionItalic>
+            <CharityDescription>{t("Наші адвокати є авторами статей, брошур та відео, щоб поширювати правову інформацію серед громади та допомагати людям розуміти їх права та обов'язки.")}</CharityDescription>
+            <DescriptionItalic>{t("Благодійність")}</DescriptionItalic>
+            <CharityDescription>{t("Адвокатське об'єднання фінансово підтримує різні благодійні організації та проекти, що сприяють розвитку громади та покращенню умов життя в ній.")}</CharityDescription>
         </Box>
       </CharityContainer>
     </CharitySection>

@@ -1,7 +1,7 @@
-import styled, { keyframes } from 'styled-components';
-import { MdClose } from 'react-icons/md';
-import { theme } from 'components/baseStyles/Variables.styled';
-import { LinkBtn } from 'components/baseStyles/CommonStyle.styled';
+import styled, { keyframes } from "styled-components";
+import { MdClose } from "react-icons/md";
+import { theme } from "components/baseStyles/Variables.styled";
+import { LinkBtn } from "components/baseStyles/CommonStyle.styled";
 
 export const slitOutVertical = keyframes`
   0% {
@@ -9,9 +9,14 @@ export const slitOutVertical = keyframes`
             transform: translateZ(0) rotateY(0);
     opacity: 1;
   }
+  24% {
+    -webkit-transform: translateZ(-160px) rotateY(88deg);
+            transform: translateZ(-160px) rotateY(88deg);
+    opacity: 0.5;
+  }
   54% {
-    -webkit-transform: translateZ(-160px) rotateY(87deg);
-            transform: translateZ(-160px) rotateY(87deg);
+    -webkit-transform: translateZ(-560px) rotateY(87deg);
+            transform: translateZ(-560px) rotateY(87deg);
     opacity: 1;
   }
   100% {
@@ -26,6 +31,11 @@ export const slitInVertical = keyframes`
     -webkit-transform: translateZ(-800px) rotateY(90deg);
             transform: translateZ(-800px) rotateY(90deg);
     opacity: 0;
+  }
+  24% {
+    -webkit-transform: translateZ(-560px) rotateY(88deg);
+            transform: translateZ(-560px) rotateY(88deg);
+    opacity: 0.5;
   }
   54% {
     -webkit-transform: translateZ(-160px) rotateY(87deg);
@@ -53,14 +63,15 @@ export const Backdrop = styled.div`
 
   background: rgba(0, 0, 0, 0.5);
 
-  transition: ${theme.transition[0]};
+  transition: ${theme.transition[2]};
   overflow-y: scroll;
 
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    /* animation: ${slitOutVertical} 0.25s ease-in both; */
+    /* animation: ${slitOutVertical} 0.5s ease both;   */
+    transition: ${theme.transition[2]};
   }
 `;
 
@@ -80,8 +91,8 @@ export const Modal = styled.div`
   border-radius: 5px;
   box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
 
-  animation: ${slitInVertical} 0.25s ease-out both;
-  transition: ${theme.transition[0]};
+  animation: ${slitInVertical} 0.5s ease both;
+  transition: ${theme.transition[2]};
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     max-width: calc(100vw - 100px);
@@ -144,7 +155,7 @@ export const Item = styled.li`
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: -15px;

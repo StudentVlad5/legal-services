@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Language from '../Language/Language';
 import { MobileNavList, NavList, NavItem, Connect } from './Nav.styled';
 import { ReactComponent as Phone } from 'images/svg/phone.svg';
+
 
 const handleChangeActiveClass = e => {
   // e.preventDefault();
@@ -24,12 +25,35 @@ const handleChangeActiveClass = e => {
 export const MobileNav = ({ toggleMenu }) => {
   const { t } = useTranslation();
 
+  const [activeItem, setActiveItem] = useState("about");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section');
+      let currentActiveSection = null;
+
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= 300) {
+          currentActiveSection = section.id;
+          setActiveItem(currentActiveSection);
+          
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <MobileNavList>
       <NavItem
         href="#about"
         aria-label={t('Про нас')}
-        className="headerNavigationItem active"
+        className={activeItem === 'about' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="about"
         onClick={e => {
           toggleMenu(e);
@@ -41,7 +65,7 @@ export const MobileNav = ({ toggleMenu }) => {
       <NavItem
         href="#practices"
         aria-label={t('Практики')}
-        className="headerNavigationItem"
+        className={activeItem === 'practices' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="practices"
         onClick={e => {
           toggleMenu(e);
@@ -53,7 +77,7 @@ export const MobileNav = ({ toggleMenu }) => {
       <NavItem
         href="#team"
         aria-label={t('Команда')}
-        className="headerNavigationItem"
+        className={activeItem === 'team' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="team"
         onClick={e => {
           toggleMenu(e);
@@ -65,7 +89,7 @@ export const MobileNav = ({ toggleMenu }) => {
       <NavItem
         href="#advantages"
         aria-label={t('Переваги')}
-        className="headerNavigationItem"
+        className={activeItem === 'advantages' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="advantages"
         onClick={e => {
           toggleMenu(e);
@@ -77,7 +101,7 @@ export const MobileNav = ({ toggleMenu }) => {
       <NavItem
         href="#partners"
         aria-label={t('Партнери')}
-        className="headerNavigationItem"
+        className={activeItem === 'partners' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="partners"
         onClick={e => {
           toggleMenu(e);
@@ -89,7 +113,7 @@ export const MobileNav = ({ toggleMenu }) => {
       <NavItem
         href="#charity"
         aria-label={t('Благодійність')}
-        className="headerNavigationItem"
+        className={activeItem === 'charity' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="charity"
         onClick={e => {
           toggleMenu(e);
@@ -109,13 +133,35 @@ export const MobileNav = ({ toggleMenu }) => {
 
 export const Nav = () => {
   const { t } = useTranslation();
+const [activeItem, setActiveItem] = useState("about");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section');
+      let currentActiveSection = null;
+
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= 300) {
+          currentActiveSection = section.id;
+          setActiveItem(currentActiveSection);
+          
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <NavList>
       <NavItem
         href="#about"
         aria-label={t('Про нас')}
-        className="headerNavigationItem active"
+        className={activeItem === 'about' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="about"
         onClick={e => handleChangeActiveClass(e)}
       >
@@ -124,7 +170,7 @@ export const Nav = () => {
       <NavItem
         href="#practices"
         aria-label={t('Практики')}
-        className="headerNavigationItem"
+        className={activeItem === 'practices' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="practices"
         onClick={e => handleChangeActiveClass(e)}
       >
@@ -133,7 +179,7 @@ export const Nav = () => {
       <NavItem
         href="#team"
         aria-label={t('Команда')}
-        className="headerNavigationItem"
+        className={activeItem === 'team' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="team"
         onClick={e => handleChangeActiveClass(e)}
       >
@@ -142,7 +188,7 @@ export const Nav = () => {
       <NavItem
         href="#advantages"
         aria-label={t('Переваги')}
-        className="headerNavigationItem"
+        className={activeItem === 'advantages' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="advantages"
         onClick={e => handleChangeActiveClass(e)}
       >
@@ -151,7 +197,7 @@ export const Nav = () => {
       <NavItem
         href="#partners"
         aria-label={t('Партнери')}
-        className="headerNavigationItem"
+        className={activeItem === 'partners' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="partners"
         onClick={e => handleChangeActiveClass(e)}
       >
@@ -160,7 +206,7 @@ export const Nav = () => {
       <NavItem
         href="#charity"
         aria-label={t('Благодійність')}
-        className="headerNavigationItem"
+        className={activeItem === 'charity' ? "headerNavigationItem active" : "headerNavigationItem"}
         data-info="charity"
         onClick={e => handleChangeActiveClass(e)}
       >
