@@ -12,12 +12,12 @@ export const slitOutVertical = keyframes`
   24% {
     -webkit-transform: translateZ(-160px) rotateY(88deg);
             transform: translateZ(-160px) rotateY(88deg);
-    opacity: 0.5;
+    opacity: 0.7;
   }
   54% {
     -webkit-transform: translateZ(-560px) rotateY(87deg);
             transform: translateZ(-560px) rotateY(87deg);
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
     -webkit-transform: translateZ(-800px) rotateY(90deg);
@@ -40,11 +40,12 @@ export const slitInVertical = keyframes`
   54% {
     -webkit-transform: translateZ(-160px) rotateY(87deg);
             transform: translateZ(-160px) rotateY(87deg);
-    opacity: 1;
+    opacity: 0.7;
   }
   100% {
     -webkit-transform: translateZ(0) rotateY(0);
             transform: translateZ(0) rotateY(0);
+    opacity: 1;
   }
 `;
 
@@ -67,10 +68,10 @@ export const Backdrop = styled.div`
   overflow-y: scroll;
 
   &.is-hidden {
-    opacity: 0;
+    /* opacity: 0;
     pointer-events: none;
-    visibility: hidden;
-    /* animation: ${slitOutVertical} 0.5s ease both;   */
+    visibility: hidden; */
+    animation: ${slitOutVertical} 1s ease both;  
     transition: ${theme.transition[2]};
   }
 `;
@@ -91,7 +92,7 @@ export const Modal = styled.div`
   border-radius: 5px;
   box-shadow: ${theme.colors.blackOpacity} 7px 4px 14px;
 
-  animation: ${slitInVertical} 0.5s ease both;
+  animation: ${slitInVertical} 1s ease both;
   transition: ${theme.transition[2]};
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {

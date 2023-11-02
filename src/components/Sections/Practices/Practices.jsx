@@ -44,7 +44,7 @@ export const Practices = () => {
   const [idModal, setIdModal] = useState(null);
   const toggleModal = () => {
     showModal && document.getElementById('modal').classList.toggle('is-hidden');
-    setShowModal(state => !state);
+    setTimeout(()=>setShowModal(state => !state),1000);
   };
 
   return (
